@@ -1,0 +1,35 @@
+select_precursor = {
+	length = 0
+    resources = {
+	    category = edicts
+		cost = {
+			influence = 0
+		}
+    }
+    
+	potential = {
+        is_ai = no
+        NOR = {
+            has_country_flag = vultaum_intro
+            has_country_flag = yuth_intro
+            has_country_flag = first_league_intro
+            has_country_flag = irassian_intro
+            has_country_flag = cybrex_intro
+            has_country_flag = baol_intro
+            has_country_flag = zroni_intro
+            has_country_flag = selecting_precursor
+            
+            has_civic = civic_precursor_baol
+            has_civic = civic_precursor_cybrex
+            has_civic = civic_precursor_irassian
+            has_civic = civic_precursor_league
+            has_civic = civic_precursor_vultaum
+            has_civic = civic_precursor_yuht
+            has_civic = civic_precursor_zroni
+        }
+    }
+    
+    effect = {
+		country_event = { id = precursor_selection.8 }
+	}
+}

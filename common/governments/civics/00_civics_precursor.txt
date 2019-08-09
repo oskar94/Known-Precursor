@@ -1,0 +1,240 @@
+
+@precursor_anomaly_speed = 0.5
+@precursor_excavation_speed = 0.25
+@precursor_site_clues = 2
+
+#precursor_1 = Vultaum Star Assembly
+#precursor_2 = Yuht Empire
+#precursor_3 = First League
+#precursor_4 = Irassian Concordat
+#precursor_5 = Cybrex
+
+#precursor_baol_1 = Baol
+#precursor_zroni_1 = Zroni
+
+civic_precursor_vultaum = {
+	modification = no
+	description = civic_precursor_vultaum_effect_desc
+	pickable_at_start = no
+	
+	possible = {
+		ethics = { }
+		civics = {
+			NOR = {
+				value = civic_precursor_yuht
+				value = civic_precursor_league
+				value = civic_precursor_irassian
+				value = civic_precursor_cybrex
+				value = civic_precursor_baol
+				value = civic_precursor_zroni
+			}
+		}		
+	}
+	
+	modifier = {
+		vultaum_1_cat_research_speed_mult  = @precursor_anomaly_speed
+		vultaum_2_cat_research_speed_mult  = @precursor_anomaly_speed
+		vultaum_3_cat_research_speed_mult  = @precursor_anomaly_speed
+		vultaum_4_cat_research_speed_mult  = @precursor_anomaly_speed
+		vultaum_5_cat_research_speed_mult  = @precursor_anomaly_speed
+		vultaum_6_cat_research_speed_mult  = @precursor_anomaly_speed
+		vultaum_7_cat_research_speed_mult  = @precursor_anomaly_speed
+		vultaum_8_cat_research_speed_mult  = @precursor_anomaly_speed
+		vultaum_9_cat_research_speed_mult  = @precursor_anomaly_speed
+		vultaum_10_cat_research_speed_mult = @precursor_anomaly_speed
+		vultaum_11_cat_research_speed_mult = @precursor_anomaly_speed
+		
+		VULTAUMAR_research_speed_mult = @precursor_anomaly_speed
+	}
+}
+
+civic_precursor_yuht = {
+	modification = no
+	description = civic_precursor_yuht_effect_desc
+	pickable_at_start = no
+	
+	possible = {
+		ethics = { }
+		civics = {
+			NOR = {
+				value = civic_precursor_vultaum
+				value = civic_precursor_league
+				value = civic_precursor_irassian
+				value = civic_precursor_cybrex
+				value = civic_precursor_baol
+				value = civic_precursor_zroni
+			}
+		}
+	}
+	
+	modifier = {
+		yuht_1_cat_research_speed_mult = @precursor_anomaly_speed
+		yuht_2_cat_research_speed_mult = @precursor_anomaly_speed
+		yuht_3_cat_research_speed_mult = @precursor_anomaly_speed
+		yuht_4_cat_research_speed_mult = @precursor_anomaly_speed
+		yuht_5_cat_research_speed_mult = @precursor_anomaly_speed
+		yuht_6_cat_research_speed_mult = @precursor_anomaly_speed
+		yuht_7_cat_research_speed_mult = @precursor_anomaly_speed
+		yuht_8_cat_research_speed_mult = @precursor_anomaly_speed
+		yuht_9_cat_research_speed_mult = @precursor_anomaly_speed
+		
+		YUHTAAN_research_speed_mult = @precursor_anomaly_speed
+	}
+}
+
+civic_precursor_league = {
+	modification = no
+	description = civic_precursor_league_effect_desc
+	pickable_at_start = no
+	
+	possible = {
+		ethics = { }
+		civics = {
+			NOR = {
+				value = civic_precursor_vultaum
+				value = civic_precursor_yuht
+				value = civic_precursor_irassian
+				value = civic_precursor_cybrex
+				value = civic_precursor_baol
+				value = civic_precursor_zroni
+			}
+		}
+	}
+	
+	modifier = {
+		league_1_cat_research_speed_mult  = @precursor_anomaly_speed
+		league_2_cat_research_speed_mult  = @precursor_anomaly_speed
+		league_3_cat_research_speed_mult  = @precursor_anomaly_speed
+		league_4_cat_research_speed_mult  = @precursor_anomaly_speed
+		league_5_cat_research_speed_mult  = @precursor_anomaly_speed
+		league_6_cat_research_speed_mult  = @precursor_anomaly_speed
+		league_7_cat_research_speed_mult  = @precursor_anomaly_speed
+		league_8_cat_research_speed_mult  = @precursor_anomaly_speed
+		league_9_cat_research_speed_mult  = @precursor_anomaly_speed
+		league_10_cat_research_speed_mult = @precursor_anomaly_speed
+		league_11_cat_research_speed_mult = @precursor_anomaly_speed
+		league_12_cat_research_speed_mult = @precursor_anomaly_speed
+		league_13_cat_research_speed_mult = @precursor_anomaly_speed
+		league_14_cat_research_speed_mult = @precursor_anomaly_speed
+		
+		FEN_HABBANIS_research_speed_mult = @precursor_anomaly_speed
+	}
+}
+
+civic_precursor_irassian = {
+	modification = no
+	description = civic_precursor_irassian_effect_desc
+	pickable_at_start = no
+	
+	possible = {
+		ethics = { }
+		civics = {
+			NOR = {
+				value = civic_precursor_vultaum
+				value = civic_precursor_yuht
+				value = civic_precursor_league
+				value = civic_precursor_cybrex
+				value = civic_precursor_baol
+				value = civic_precursor_zroni
+			}
+		}
+	}
+	
+	modifier = { 
+		irassian_1_cat_research_speed_mult  = @precursor_anomaly_speed
+		irassian_2_cat_research_speed_mult  = @precursor_anomaly_speed
+		irassian_3_cat_research_speed_mult  = @precursor_anomaly_speed
+		irassian_4_cat_research_speed_mult  = @precursor_anomaly_speed
+		irassian_5_cat_research_speed_mult  = @precursor_anomaly_speed
+		irassian_6_cat_research_speed_mult  = @precursor_anomaly_speed
+		irassian_7_cat_research_speed_mult  = @precursor_anomaly_speed
+		irassian_8_cat_research_speed_mult  = @precursor_anomaly_speed
+		irassian_9_cat_research_speed_mult  = @precursor_anomaly_speed
+		irassian_10_cat_research_speed_mult = @precursor_anomaly_speed
+		irassian_11_cat_research_speed_mult = @precursor_anomaly_speed
+		
+		IRASSIA_research_speed_mult = @precursor_anomaly_speed
+	}
+}
+
+civic_precursor_cybrex = {
+	modification = no
+	description = civic_precursor_cybrex_effect_desc
+	pickable_at_start = no
+	
+	possible = {
+		ethics = { }
+		civics = {
+			NOR = {
+				value = civic_precursor_vultaum
+				value = civic_precursor_yuht
+				value = civic_precursor_league
+				value = civic_precursor_irassian
+				value = civic_precursor_baol
+				value = civic_precursor_zroni
+			}
+		}
+	}
+	
+	modifier = {
+		cybrex_1_cat_research_speed_mult  = @precursor_anomaly_speed
+		cybrex_2_cat_research_speed_mult  = @precursor_anomaly_speed
+		cybrex_3_cat_research_speed_mult  = @precursor_anomaly_speed
+		cybrex_4_cat_research_speed_mult  = @precursor_anomaly_speed
+		cybrex_5_cat_research_speed_mult  = @precursor_anomaly_speed
+		cybrex_6_cat_research_speed_mult  = @precursor_anomaly_speed
+		cybrex_7_cat_research_speed_mult  = @precursor_anomaly_speed
+		cybrex_8_cat_research_speed_mult  = @precursor_anomaly_speed
+		cybrex_9_cat_research_speed_mult  = @precursor_anomaly_speed
+		cybrex_10_cat_research_speed_mult = @precursor_anomaly_speed
+		cybrex_11_cat_research_speed_mult = @precursor_anomaly_speed
+	}
+}
+
+civic_precursor_baol = {
+	modification = no
+	pickable_at_start = no
+	
+	possible = {
+		ethics = { }
+		civics = {
+			NOR = {
+				value = civic_precursor_vultaum
+				value = civic_precursor_yuht
+				value = civic_precursor_league
+				value = civic_precursor_irassian
+				value = civic_precursor_cybrex
+				value = civic_precursor_zroni
+			}
+		}
+	}
+	
+	modifier = {
+		ship_archeaological_site_clues_add = @precursor_site_clues
+		ship_archaeological_site_excavation_speed_mult = @precursor_excavation_speed
+	}
+}
+
+civic_precursor_zroni = {
+	modification = no
+	pickable_at_start = no
+	
+	possible = {
+		ethics = { }
+		civics = {
+			NOR = {
+				value = civic_precursor_vultaum
+				value = civic_precursor_yuht
+				value = civic_precursor_league
+				value = civic_precursor_irassian
+				value = civic_precursor_cybrex
+				value = civic_precursor_baol
+			}
+		}
+	}
+	
+	modifier = {
+		ship_archeaological_site_clues_add = @precursor_site_clues
+		ship_archaeological_site_excavation_speed_mult = @precursor_excavation_speed
+	}
+}
