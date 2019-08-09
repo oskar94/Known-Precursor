@@ -18,14 +18,6 @@ select_precursor = {
             has_country_flag = baol_intro
             has_country_flag = zroni_intro
             has_country_flag = selecting_precursor
-            
-            has_civic = civic_precursor_baol
-            has_civic = civic_precursor_cybrex
-            has_civic = civic_precursor_irassian
-            has_civic = civic_precursor_league
-            has_civic = civic_precursor_vultaum
-            has_civic = civic_precursor_yuht
-            has_civic = civic_precursor_zroni
         }
     }
     

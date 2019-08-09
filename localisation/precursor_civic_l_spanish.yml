@@ -1,30 +1,4 @@
 ﻿l_spanish:
-  civic_precursor_vultaum:0 "Precursor Vultaum Star Assembly"
-  civic_precursor_vultaum_desc:0 "After finding remains of an older civilization this society have been dedicated to finding out what happend to them."
-  civic_precursor_vultaum_effect_desc:0 "Vultaum Anomaly Research Speed: §G+50.0%§!"
-  
-  civic_precursor_yuht:0 "Precursor Yuht Empire"
-  civic_precursor_yuht_desc:0 "After finding remains of an older civilization this society have been dedicated to finding out what happend to them."
-  civic_precursor_yuht_effect_desc:0 "Yuht Anomaly Research Speed: §G+50.0%§!"
-  
-  civic_precursor_league:0 "Precursor First League"
-  civic_precursor_league_desc:0 "After finding remains of an older civilization this society have been dedicated to finding out what happend to them."
-  civic_precursor_league_effect_desc:0 "League Anomaly Research Speed: §G+50.0%§!"
-  
-  civic_precursor_irassian:0 "Precursor Irassian Concordat"
-  civic_precursor_irassian_desc:0 "After finding remains of an older civilization this society have been dedicated to finding out what happend to them."
-  civic_precursor_irassian_effect_desc:0 "Irassian Anomaly Research Speed: §G+50.0%§!"
-  
-  civic_precursor_cybrex:0 "Precursor Cybrex"
-  civic_precursor_cybrex_desc:0 "After finding remains of an older civilization this society have been dedicated to finding out what happend to them."
-  civic_precursor_cybrex_effect_desc:0 "Cybrex Anomaly Research Speed: §G+50.0%§!"
-  
-  civic_precursor_baol:0 "Precursor Baol"
-  civic_precursor_baol_desc:0 "After finding remains of an older civilization this society have been dedicated to finding out what happend to them."
-  
-  civic_precursor_zroni:0 "Precursor Zroni"
-  civic_precursor_zroni_desc:0 "After finding remains of an older civilization this society have been dedicated to finding out what happend to them."
-  
   edict_select_precursor:0 "Select Precursor"
   edict_select_precursor_desc:0 "Allows you to select your precursor empire."
   

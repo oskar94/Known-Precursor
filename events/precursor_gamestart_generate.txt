@@ -212,6 +212,7 @@ country_event = {
         is_ai = no
         has_country_flag = selecting_precursor
         host_has_dlc = "Ancient Relics Story Pack"
+        has_ancrel = yes
     }
     
     immediate = {
@@ -249,6 +250,7 @@ country_event = {
                         }
                     }
                 }
+                
                 set_star_flag = first_grunur_site@root
                 
                 random_system_planet = {
@@ -282,6 +284,7 @@ country_event = {
         is_ai = no
         has_country_flag = selecting_precursor
         host_has_dlc = "Ancient Relics Story Pack"
+        has_ancrel = yes
     }
     
     immediate = {
@@ -316,7 +319,10 @@ country_event = {
                         habitable_planet = yes
                     }
                 }
-                 random_system_planet = {
+                
+                set_star_flag = first_zoroni_site@root
+                
+                random_system_planet = {
                     limit = {
                         is_preventing_anomaly = no
                         has_anomaly = no 
@@ -436,6 +442,7 @@ country_event = {
     option = {
         name = precursor_selection.8.f
         trigger = {
+            has_ancrel = yes
             host_has_dlc = "Ancient Relics Story Pack"
             NOT = {
                 has_country_flag = baol_intro
@@ -452,6 +459,7 @@ country_event = {
     option = {
         name = precursor_selection.8.g
         trigger = {
+            has_ancrel = yes
             host_has_dlc = "Ancient Relics Story Pack"
             NOT = {
                 has_country_flag = zroni_intro
