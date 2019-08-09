@@ -340,9 +340,9 @@ country_event = {
 
 # Selection window
 country_event = {
-    id = precursor_selection.8
-    title = precursor_selection.8.name
-    desc = precursor_selection.8.desc
+    id = precursor_selection.0
+    title = precursor_selection.0.name
+    desc = precursor_selection.0.desc
     is_triggered_only = yes 
     picture = GFX_evt_ancient_databank
     
@@ -365,7 +365,7 @@ country_event = {
     }
     
     option = {
-        name = precursor_selection.8.a
+        name = precursor_selection.0.a
         trigger = {
             NOT = {
                 has_country_flag = vultaum_intro
@@ -380,7 +380,7 @@ country_event = {
     }
     
     option = {
-        name = precursor_selection.8.b
+        name = precursor_selection.0.b
         trigger = {
             NOT = {
                 has_country_flag = yuth_intro
@@ -395,7 +395,7 @@ country_event = {
     }
     
     option = {
-        name = precursor_selection.8.c
+        name = precursor_selection.0.c
         trigger = {
             NOT = {
                 has_country_flag = first_league_intro
@@ -410,7 +410,7 @@ country_event = {
     }
     
     option = {
-        name = precursor_selection.8.d
+        name = precursor_selection.0.d
         trigger = {
             NOT = {
                 has_country_flag = irassian_intro
@@ -425,7 +425,7 @@ country_event = {
     }
     
     option = {
-        name = precursor_selection.8.e
+        name = precursor_selection.0.e
         trigger = {
             NOT = {
                 has_country_flag = cybrex_intro
@@ -440,7 +440,7 @@ country_event = {
     }
     
     option = {
-        name = precursor_selection.8.f
+        name = precursor_selection.0.f
         trigger = {
             has_ancrel = yes
             host_has_dlc = "Ancient Relics Story Pack"
@@ -457,7 +457,7 @@ country_event = {
     }
     
     option = {
-        name = precursor_selection.8.g
+        name = precursor_selection.0.g
         trigger = {
             has_ancrel = yes
             host_has_dlc = "Ancient Relics Story Pack"
@@ -474,7 +474,7 @@ country_event = {
     }
     
     option = {
-        name = precursor_selection.8.h
+        name = precursor_selection.0.h
         hidden_effect = {
             remove_country_flag = selecting_precursor
         }

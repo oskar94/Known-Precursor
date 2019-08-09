@@ -22,6 +22,6 @@ select_precursor = {
     }
     
     effect = {
-		country_event = { id = precursor_selection.8 }
+		country_event = { id = precursor_selection.0 }
 	}
 }
