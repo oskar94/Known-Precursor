@@ -40,7 +40,7 @@ country_event = {
     }
 }
 
-# Yuth Empire
+# Yuht Empire
 country_event = {
     id = precursor_selection.2
     hide_window = yes
@@ -54,7 +54,7 @@ country_event = {
     }
     
     immediate = {
-        set_country_flag = yuth_intro
+        set_country_flag = yuht_intro
         remove_country_flag = selecting_precursor
         
         begin_event_chain = {
@@ -350,7 +350,7 @@ country_event = {
         is_ai = no
         NOR = {
             has_country_flag = vultaum_intro
-            has_country_flag = yuth_intro
+            has_country_flag = yuht_intro
             has_country_flag = first_league_intro
             has_country_flag = irassian_intro
             has_country_flag = cybrex_intro
@@ -383,7 +383,7 @@ country_event = {
         name = precursor_selection.0.b
         trigger = {
             NOT = {
-                has_country_flag = yuth_intro
+                has_country_flag = yuht_intro
             }
         }
         hidden_effect = {
