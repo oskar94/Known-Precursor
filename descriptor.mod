@@ -1,4 +1,4 @@
-path="C:/Users/Oskar/Documents/Paradox Interactive/Stellaris/mod/known_precursor"
+path="mod/known_precursor"
 tags={
 	"Gameplay"
 }
