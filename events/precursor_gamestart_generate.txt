@@ -10,7 +10,10 @@ country_event = {
     
     trigger = {
         is_ai = no
-        has_country_flag = selecting_precursor
+        or = {
+            has_country_flag = selecting_precursor
+            has_country_flag = selecting_precursor_all
+        }
     }
     
     immediate = {
@@ -32,6 +35,7 @@ country_event = {
                 distance = {
                     source = ROOT.home_planet
                     max_jumps = 3
+                    # min_jumps = 1
                     use_bypasses = no
                 }
             }
@@ -50,7 +54,10 @@ country_event = {
     
     trigger = {
         is_ai = no
-        has_country_flag = selecting_precursor
+        or = {
+            has_country_flag = selecting_precursor
+            has_country_flag = selecting_precursor_all
+        }
     }
     
     immediate = {
@@ -72,6 +79,7 @@ country_event = {
                 distance = {
                     source = ROOT.home_planet
                     max_jumps = 3
+                    # min_jumps = 1
                     use_bypasses = no
                 }
             }
@@ -90,7 +98,10 @@ country_event = {
     
     trigger = {
         is_ai = no
-        has_country_flag = selecting_precursor
+        or = {
+            has_country_flag = selecting_precursor
+            has_country_flag = selecting_precursor_all
+        }
     }
     
     immediate = {
@@ -112,6 +123,7 @@ country_event = {
                 distance = {
                     source = ROOT.home_planet
                     max_jumps = 3
+                    # min_jumps = 1
                     use_bypasses = no
                 }
             }
@@ -130,7 +142,10 @@ country_event = {
     
     trigger = {
         is_ai = no
-        has_country_flag = selecting_precursor
+        or = {
+            has_country_flag = selecting_precursor
+            has_country_flag = selecting_precursor_all
+        }
     }
     
     immediate = {
@@ -152,6 +167,7 @@ country_event = {
                 distance = {
                     source = ROOT.home_planet
                     max_jumps = 3
+                    # min_jumps = 1
                     use_bypasses = no
                 }
             }
@@ -170,7 +186,10 @@ country_event = {
     
     trigger = {
         is_ai = no
-        has_country_flag = selecting_precursor
+        or = {
+            has_country_flag = selecting_precursor
+            has_country_flag = selecting_precursor_all
+        }
     }
     
     immediate = {
@@ -192,6 +211,7 @@ country_event = {
                 distance = {
                     source = ROOT.home_planet
                     max_jumps = 3
+                    # min_jumps = 1
                     use_bypasses = no
                 }
             }
@@ -210,7 +230,10 @@ country_event = {
     
     trigger = {
         is_ai = no
-        has_country_flag = selecting_precursor
+        or = {
+            has_country_flag = selecting_precursor
+            has_country_flag = selecting_precursor_all
+        }
         host_has_dlc = "Ancient Relics Story Pack"
         has_ancrel = yes
     }
@@ -230,6 +253,7 @@ country_event = {
                 distance = {
                     source = ROOT.home_planet
                     max_jumps = 3
+                    # min_jumps = 1
                     use_bypasses = no
                 }
             }
@@ -237,9 +261,14 @@ country_event = {
         }
         
         home_planet.solar_system = {
-            closest_system = {
-                max_steps = 3
+            random_system = {
                 limit = {
+                    distance = {
+                        source = ROOT.home_planet
+                        max_jumps = 3
+                        min_jumps = 1
+                        use_bypasses = no
+                    }
                     any_system_planet = {
                         is_preventing_anomaly = no
                         has_anomaly = no
@@ -282,7 +311,10 @@ country_event = {
     
     trigger = {
         is_ai = no
-        has_country_flag = selecting_precursor
+        or = {
+            has_country_flag = selecting_precursor
+            has_country_flag = selecting_precursor_all
+        }
         host_has_dlc = "Ancient Relics Story Pack"
         has_ancrel = yes
     }
@@ -302,6 +334,7 @@ country_event = {
                 distance = {
                     source = ROOT.home_planet
                     max_jumps = 3
+                    # min_jumps = 1
                     use_bypasses = no
                 }
             }
@@ -309,9 +342,14 @@ country_event = {
         }
         
         home_planet.solar_system = {
-            closest_system = {
-                max_steps = 3
+            random_system = {
                 limit = {
+                    distance = {
+                        source = ROOT.home_planet
+                        max_jumps = 3
+                        min_jumps = 1
+                        use_bypasses = no
+                    }
                     any_system_planet = {
                         is_preventing_anomaly = no
                         has_anomaly = no 
@@ -362,6 +400,7 @@ country_event = {
     
     immediate = {
         set_country_flag = selecting_precursor
+        remove_country_flag = selecting_precursor_all
     }
     
     option = {
@@ -466,6 +505,42 @@ country_event = {
             }
         }
         hidden_effect = {
+            country_event = {
+                id = precursor_selection.7
+                days = 0
+            }
+        }
+    }
+    
+    option = {
+        name = precursor_selection.0.i
+        hidden_effect = {
+            set_country_flag = selecting_precursor_all
+            
+            country_event = {
+                id = precursor_selection.1
+                days = 0
+            }
+            country_event = {
+                id = precursor_selection.2
+                days = 0
+            }
+            country_event = {
+                id = precursor_selection.3
+                days = 0
+            }
+            country_event = {
+                id = precursor_selection.4
+                days = 0
+            }
+            country_event = {
+                id = precursor_selection.5
+                days = 0
+            }
+            country_event = {
+                id = precursor_selection.6
+                days = 0
+            }
             country_event = {
                 id = precursor_selection.7
                 days = 0
