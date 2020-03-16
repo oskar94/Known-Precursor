@@ -1,5 +1,5 @@
 on_game_start = {
 	events = {
-		precursor_selection.8
+		precursor_selection.9
 	}
 }

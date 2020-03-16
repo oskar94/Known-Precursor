@@ -30,16 +30,8 @@ country_event = {
             days = 5
         }
         
-        every_system = {
-            limit = {
-                distance = {
-                    source = ROOT.home_planet
-                    max_jumps = 3
-                    # min_jumps = 1
-                    use_bypasses = no
-                }
-            }
-            set_star_flag = precursor_1
+        precursor_set_flags = {
+            precursor = precursor_1
         }
     }
 }
@@ -74,16 +66,8 @@ country_event = {
             days = 5
         }
         
-        every_system = {
-            limit = {
-                distance = {
-                    source = ROOT.home_planet
-                    max_jumps = 3
-                    # min_jumps = 1
-                    use_bypasses = no
-                }
-            }
-            set_star_flag = precursor_2
+        precursor_set_flags = {
+            precursor = precursor_2
         }
     }
 }
@@ -118,16 +102,8 @@ country_event = {
             days = 5
         }
         
-        every_system = {
-            limit = {
-                distance = {
-                    source = ROOT.home_planet
-                    max_jumps = 3
-                    # min_jumps = 1
-                    use_bypasses = no
-                }
-            }
-            set_star_flag = precursor_3
+        precursor_set_flags = {
+            precursor = precursor_3
         }
     }
 }
@@ -162,16 +138,8 @@ country_event = {
             days = 5
         }
         
-        every_system = {
-            limit = {
-                distance = {
-                    source = ROOT.home_planet
-                    max_jumps = 3
-                    # min_jumps = 1
-                    use_bypasses = no
-                }
-            }
-            set_star_flag = precursor_4
+        precursor_set_flags = {
+            precursor = precursor_4
         }
     }
 }
@@ -206,16 +174,8 @@ country_event = {
             days = 5
         }
         
-        every_system = {
-            limit = {
-                distance = {
-                    source = ROOT.home_planet
-                    max_jumps = 3
-                    # min_jumps = 1
-                    use_bypasses = no
-                }
-            }
-            set_star_flag = precursor_5
+        precursor_set_flags = {
+            precursor = precursor_5
         }
     }
 }
@@ -248,16 +208,8 @@ country_event = {
             days = 5
         }
         
-        every_system = {
-            limit = {
-                distance = {
-                    source = ROOT.home_planet
-                    max_jumps = 3
-                    # min_jumps = 1
-                    use_bypasses = no
-                }
-            }
-            set_star_flag = precursor_baol_1
+        precursor_set_flags = {
+            precursor = precursor_baol_1
         }
         
         home_planet.solar_system = {
@@ -329,16 +281,8 @@ country_event = {
             days = 5
         }
         
-        every_system = {
-            limit = {
-                distance = {
-                    source = ROOT.home_planet
-                    max_jumps = 3
-                    # min_jumps = 1
-                    use_bypasses = no
-                }
-            }
-            set_star_flag = precursor_zroni_1
+        precursor_set_flags = {
+            precursor = precursor_zroni_1
         }
         
         home_planet.solar_system = {
@@ -514,6 +458,18 @@ country_event = {
     
     option = {
         name = precursor_selection.0.i
+        trigger = {
+            NAND = {
+                has_country_flag = vultaum_intro
+                has_country_flag = yuht_intro
+                has_country_flag = first_league_intro
+                has_country_flag = irassian_intro
+                has_country_flag = cybrex_intro
+                has_country_flag = baol_intro
+                has_country_flag = zroni_intro
+                has_country_flag = selecting_precursor
+            }
+        }
         hidden_effect = {
             set_country_flag = selecting_precursor_all
             
@@ -545,6 +501,10 @@ country_event = {
                 id = precursor_selection.7
                 days = 0
             }
+            country_event = {
+                id = precursor_selection.8
+                days = 5
+            }
         }
     }
     
@@ -556,8 +516,19 @@ country_event = {
     }
 }
 
-event = {
+country_event = {
     id = precursor_selection.8
+    hide_window = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    immediate = {
+        remove_country_flag = selecting_precursor
+        remove_country_flag = selecting_precursor_all
+    }
+}
+
+event = {
+    id = precursor_selection.9
     hide_window = yes
     fire_only_once = yes
     is_triggered_only = yes
