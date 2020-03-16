@@ -1,5 +1,3 @@
-# Known-Precursor
-
 This mod adds an edict available that will open a selection screen where you can pick your precursor.
 This edict will disappear when you select/discover a precursor.
 
@@ -8,14 +6,18 @@ Baol and Zroni dig-sites will spawn nearby your starting system.
 
 To manually open the precursor selection menu write event `precursor_selection.0` in console.
 
-## Localization
+[h1]Localization[/h1]
 Currently only in English, but I am open for help.
 
-* Braz/Por: 
-* Chinese: 
-* English: [Oskar94](https://github.com/oskar94) 
-* French: 
-* German: 
-* Polish: 
-* Russian: 
-* Spanish: 
+[list]
+[*] Braz/Por: 
+[*] Chinese: 
+[*] English: [url=https://github.com/oskar94]oskar94[/url]
+[*] French: 
+[*] German: 
+[*] Polish: 
+[*] Russian: 
+[*] Spanish: 
+[/list]
+
+[url=https://github.com/oskar94/Known-Precursor]Source[/url]
