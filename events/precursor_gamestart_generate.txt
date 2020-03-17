@@ -213,14 +213,16 @@ country_event = {
         }
         
         home_planet.solar_system = {
-            random_system = {
+            # random_system = {
+            closest_system = {
+                max_steps = 10
                 limit = {
-                    distance = {
-                        source = ROOT.home_planet
-                        max_jumps = 3
-                        min_jumps = 1
-                        use_bypasses = no
-                    }
+                    # distance = {
+                    #     source = ROOT.home_planet
+                    #     max_jumps = 3
+                    #     min_jumps = 1
+                    #     use_bypasses = no
+                    # }
                     any_system_planet = {
                         is_preventing_anomaly = no
                         has_anomaly = no
@@ -286,14 +288,16 @@ country_event = {
         }
         
         home_planet.solar_system = {
-            random_system = {
+            # random_system = {
+            closest_system = {
+                max_steps = 10
                 limit = {
-                    distance = {
-                        source = ROOT.home_planet
-                        max_jumps = 3
-                        min_jumps = 1
-                        use_bypasses = no
-                    }
+                    # distance = {
+                    #     source = ROOT.home_planet
+                    #     max_jumps = 3
+                    #     min_jumps = 1
+                    #     use_bypasses = no
+                    # }
                     any_system_planet = {
                         is_preventing_anomaly = no
                         has_anomaly = no 
