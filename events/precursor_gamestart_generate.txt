@@ -196,59 +196,70 @@ country_event = {
         }
         host_has_dlc = "Ancient Relics Story Pack"
         has_ancrel = yes
+        NOT = {
+            has_global_flag = baol_started
+        }
     }
     
     immediate = {
-        set_country_flag = baol_intro
-        set_global_flag = baol_started
-        remove_country_flag = selecting_precursor
-        
-        country_event = {
-            id = story.5  
-            days = 5
-        }
-        
-        precursor_set_flags = {
-            precursor = precursor_baol_1
-        }
-        
-        home_planet.solar_system = {
-            # random_system = {
-            closest_system = {
-                max_steps = 10
-                limit = {
-                    # distance = {
-                    #     source = ROOT.home_planet
-                    #     max_jumps = 3
-                    #     min_jumps = 1
-                    #     use_bypasses = no
-                    # }
-                    any_system_planet = {
-                        is_preventing_anomaly = no
-                        has_anomaly = no
-                        NOT = { exists = archaeological_site }
-                        NOR = {
-                            is_planet_class = pc_gas_giant
-                            is_planet_class = pc_molten
-                        }
-                    }
-                }
-                
-                set_star_flag = first_grunur_site@root
-                
-                random_system_planet = {
+        if = {
+            limit = { 
+                NOT = {
+                    has_global_flag = baol_started
+                } 
+            }
+            
+            set_country_flag = baol_intro
+            set_global_flag = baol_started
+            remove_country_flag = selecting_precursor
+            
+            country_event = {
+                id = story.5  
+                days = 5
+            }
+            
+            precursor_set_flags = {
+                precursor = precursor_baol_1
+            }
+            
+            home_planet.solar_system = {
+                # random_system = {
+                closest_system = {
+                    max_steps = 10
                     limit = {
-                        is_preventing_anomaly = no
-                        has_anomaly = no
-                        is_star = no
-                        NOT = { exists = archaeological_site }
-                        NOR = {
-                            is_planet_class = pc_gas_giant
-                            is_planet_class = pc_molten
+                        # distance = {
+                        #     source = ROOT.home_planet
+                        #     max_jumps = 3
+                        #     min_jumps = 1
+                        #     use_bypasses = no
+                        # }
+                        any_system_planet = {
+                            is_preventing_anomaly = no
+                            has_anomaly = no
+                            NOT = { exists = archaeological_site }
+                            NOR = {
+                                is_planet_class = pc_gas_giant
+                                is_planet_class = pc_molten
+                            }
                         }
                     }
-                    create_archaeological_site = grunur_digsite_1
-                    prevent_anomaly = yes
+                    
+                    set_star_flag = first_grunur_site@root
+                    
+                    random_system_planet = {
+                        limit = {
+                            is_preventing_anomaly = no
+                            has_anomaly = no
+                            is_star = no
+                            NOT = { exists = archaeological_site }
+                            NOR = {
+                                is_planet_class = pc_gas_giant
+                                is_planet_class = pc_molten
+                            }
+                        }
+                        create_archaeological_site = grunur_digsite_1
+                        prevent_anomaly = yes
+                    }
                 }
             }
         }
@@ -271,53 +282,64 @@ country_event = {
         }
         host_has_dlc = "Ancient Relics Story Pack"
         has_ancrel = yes
+        NOT = {
+            has_global_flag = zroni_started
+        }
     }
     
     immediate = {
-        set_country_flag = zroni_intro
-        set_global_flag = zroni_started
-        remove_country_flag = selecting_precursor
-        
-        country_event = {
-            id = story.5  
-            days = 5
-        }
-        
-        precursor_set_flags = {
-            precursor = precursor_zroni_1
-        }
-        
-        home_planet.solar_system = {
-            # random_system = {
-            closest_system = {
-                max_steps = 10
-                limit = {
-                    # distance = {
-                    #     source = ROOT.home_planet
-                    #     max_jumps = 3
-                    #     min_jumps = 1
-                    #     use_bypasses = no
-                    # }
-                    any_system_planet = {
-                        is_preventing_anomaly = no
-                        has_anomaly = no 
-                        NOT = { exists = archaeological_site }
-                        habitable_planet = yes
-                    }
-                }
+        if = {
+            limit = { 
+                NOT = {
+                    has_global_flag = zroni_started
+                } 
+            }
                 
-                set_star_flag = first_zoroni_site@root
-                
-                random_system_planet = {
+            set_country_flag = zroni_intro
+            set_global_flag = zroni_started
+            remove_country_flag = selecting_precursor
+            
+            country_event = {
+                id = story.5  
+                days = 5
+            }
+            
+            precursor_set_flags = {
+                precursor = precursor_zroni_1
+            }
+            
+            home_planet.solar_system = {
+                # random_system = {
+                closest_system = {
+                    max_steps = 10
                     limit = {
-                        is_preventing_anomaly = no
-                        has_anomaly = no 
-                        NOT = { exists = archaeological_site }
-                        habitable_planet = yes
+                        # distance = {
+                        #     source = ROOT.home_planet
+                        #     max_jumps = 3
+                        #     min_jumps = 1
+                        #     use_bypasses = no
+                        # }
+                        any_system_planet = {
+                            is_preventing_anomaly = no
+                            has_anomaly = no 
+                            NOT = { exists = archaeological_site }
+                            habitable_planet = yes
+                        }
                     }
-                    create_archaeological_site = zroni_digsite_1
-                    add_deposit = d_zro_deposit_2
-                    prevent_anomaly = yes
+                    
+                    set_star_flag = first_zoroni_site@root
+                    
+                    random_system_planet = {
+                        limit = {
+                            is_preventing_anomaly = no
+                            has_anomaly = no 
+                            NOT = { exists = archaeological_site }
+                            habitable_planet = yes
+                        }
+                        create_archaeological_site = zroni_digsite_1
+                        add_deposit = d_zro_deposit_2
+                        prevent_anomaly = yes
+                    }
                 }
             }
         }
@@ -431,8 +453,9 @@ country_event = {
         trigger = {
             has_ancrel = yes
             host_has_dlc = "Ancient Relics Story Pack"
-            NOT = {
+            NOR = {
                 has_country_flag = baol_intro
+                has_global_flag = baol_started
             }
         }
         hidden_effect = {
@@ -448,8 +471,9 @@ country_event = {
         trigger = {
             has_ancrel = yes
             host_has_dlc = "Ancient Relics Story Pack"
-            NOT = {
+            NOR = {
                 has_country_flag = zroni_intro
+                has_global_flag = zroni_started
             }
         }
         hidden_effect = {
@@ -463,16 +487,31 @@ country_event = {
     option = {
         name = precursor_selection.0.i
         trigger = {
-            NAND = {
-                has_country_flag = vultaum_intro
-                has_country_flag = yuht_intro
-                has_country_flag = first_league_intro
-                has_country_flag = irassian_intro
-                has_country_flag = cybrex_intro
-                has_country_flag = baol_intro
-                has_country_flag = zroni_intro
-                has_country_flag = selecting_precursor
+            if = {
+                limit = { 
+                    host_has_dlc = "Ancient Relics Story Pack"
+                }
+                NAND = {
+                    has_country_flag = vultaum_intro
+                    has_country_flag = yuht_intro
+                    has_country_flag = first_league_intro
+                    has_country_flag = irassian_intro
+                    has_country_flag = cybrex_intro
+                    has_country_flag = baol_intro
+                    has_country_flag = zroni_intro
+                    has_country_flag = selecting_precursor
+                }
+            } else = {
+                NAND = {
+                    has_country_flag = vultaum_intro
+                    has_country_flag = yuht_intro
+                    has_country_flag = first_league_intro
+                    has_country_flag = irassian_intro
+                    has_country_flag = cybrex_intro
+                    has_country_flag = selecting_precursor
+                }
             }
+            is_multiplayer = no
         }
         hidden_effect = {
             set_country_flag = selecting_precursor_all
@@ -497,13 +536,18 @@ country_event = {
                 id = precursor_selection.5
                 days = 0
             }
-            country_event = {
-                id = precursor_selection.6
-                days = 0
-            }
-            country_event = {
-                id = precursor_selection.7
-                days = 0
+            if = {
+                limit = { 
+                    host_has_dlc = "Ancient Relics Story Pack"
+                }
+                country_event = {
+                    id = precursor_selection.6
+                    days = 0
+                }
+                country_event = {
+                    id = precursor_selection.7
+                    days = 0
+                }
             }
             country_event = {
                 id = precursor_selection.8
