@@ -1,12 +1,25 @@
-This mod adds an edict available that will open a selection screen where you can pick your precursor.
+This mod adds an edict that will open a selection screen where you can pick your precursor.
 This edict will disappear when you select/discover a precursor.
 
 Baol and Zroni will only be available for selection if you or the host owns Ancient Relics DLC.
 Baol and Zroni dig-sites will spawn nearby your starting system.
 
-To manually open the precursor selection menu write event `precursor_selection.0` in console.
+To manually open the precursor selection menu write [i]event precursor_selection.0[/i] in console.
 
-[h1]Localization[/h1]
+[h2]Mutiplayer[/h2]
+Should work fine with some limits.
+[list]
+[*] The Baol and Zroni event chain can only be started once by one player.
+[*] The ability to select all precursors is disabled. 
+[*] Normal vanilla behavior will remain so if two or more players select the same precursor only the one that completes the chain first will spawn in the precursor system.
+[/list]
+
+[h2]Compatibility[/h2]
+Not Ironman/Achivement compatible.
+No vanilla files were harmed.
+Should be compatible with any mods that do not change how the Baol or Zroni chains starts.
+
+[h2]Localization[/h2]
 Currently only in English, but I am open for help.
 
 [list]
