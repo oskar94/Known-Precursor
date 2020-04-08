@@ -237,6 +237,7 @@ country_event = {
                         any_system_planet = {
                             is_preventing_anomaly = no
                             has_anomaly = no
+                            is_star = no
                             NOT = { exists = archaeological_site }
                             NOR = {
                                 is_planet_class = pc_gas_giant
