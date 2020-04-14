@@ -9,7 +9,7 @@ Baol and Zroni dig-sites will spawn nearby your starting system.
 To manually open the precursor selection menu write event `precursor_selection.0` in console.
 
 ## Localization
-Currently only in English, but I am open for help.
+If you want to help with translation create a fork and edit the respective language file.
 
 * Braz/Por: 
 * Chinese: 
@@ -17,5 +17,5 @@ Currently only in English, but I am open for help.
 * French: 
 * German: 
 * Polish: 
-* Russian: 
+* Russian: [Agress0r](https://github.com/Agress0r)
 * Spanish: 
