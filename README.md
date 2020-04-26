@@ -12,7 +12,7 @@ To manually open the precursor selection menu write event `precursor_selection.0
 If you want to help with translation create a fork and edit the respective language file.
 
 * Braz/Por: 
-* Chinese: 
+* Chinese: [Nazrin720](https://github.com/Nazrin720)
 * English: [Oskar94](https://github.com/oskar94) 
 * French: 
 * German: 
