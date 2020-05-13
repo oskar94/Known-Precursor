@@ -1,5 +1,5 @@
 select_precursor = {
-	length = 0
+	length = 1
     resources = {
 	    category = edicts
 		cost = {
