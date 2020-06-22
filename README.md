@@ -15,7 +15,7 @@ If you want to help with translation create a fork and edit the respective langu
 * Chinese: [Nazrin720](https://github.com/Nazrin720)
 * English: [Oskar94](https://github.com/oskar94) 
 * French: 
-* German: 
+* German: [Null-ARC](https://github.com/Null-ARC) 
 * Polish: 
 * Russian: [Agress0r](https://github.com/Agress0r)
 * Spanish: 
