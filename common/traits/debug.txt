@@ -10,7 +10,7 @@ leader_trait_known_precursor_debug = {
 		has_global_flag = KNOWN_PRECURSOR_DEBUG
 	}
 
-	custom_tooltip = leader_trait_archaeologist_tooltip
+	# custom_tooltip = leader_trait_archaeologist_tooltip
 	self_modifier = {
 
 		# Every Precursor anomaly category needs to be listed here

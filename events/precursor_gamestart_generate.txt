@@ -316,22 +316,22 @@ country_event = {
             }
             
             home_planet.solar_system = {
-                # random_system = {
                 closest_system = {
                     max_steps = 10
                     min_steps = 1
                     limit = {
-                        # distance = {
-                        #     source = ROOT.home_planet
-                        #     max_jumps = 3
-                        #     min_jumps = 1
-                        #     use_bypasses = no
-                        # }
                         any_system_planet = {
                             is_preventing_anomaly = no
                             has_anomaly = no 
                             NOT = { exists = archaeological_site }
                             habitable_planet = yes
+                            OR = {
+                                is_colony = no
+                                AND = {
+                                    is_colony = yes
+                                    is_controlled_by = root
+                                }    
+                            }
                         }
                     }
                     
@@ -343,6 +343,13 @@ country_event = {
                             has_anomaly = no 
                             NOT = { exists = archaeological_site }
                             habitable_planet = yes
+                            OR = {
+                                is_colony = no
+                                AND = {
+                                    is_colony = yes
+                                    is_controlled_by = root
+                                }    
+                            }
                         }
                         create_archaeological_site = zroni_digsite_1
                         add_deposit = d_zro_deposit_2
