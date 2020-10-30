@@ -352,6 +352,9 @@ country_event = {
                             }
                         }
                         create_archaeological_site = zroni_digsite_1
+                        ROOT = {
+                            set_country_flag = zroni_arc_chain_@prev
+                        }
                         add_deposit = d_zro_deposit_2
                         prevent_anomaly = yes
                     }
