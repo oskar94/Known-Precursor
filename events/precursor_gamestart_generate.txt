@@ -336,6 +336,13 @@ country_event = {
                     }
                     
                     set_star_flag = first_zoroni_site@root
+                    save_event_target_as = zronispawnplanet
+                    
+                    ROOT = {
+                        country_event = {
+                            id = precursor_selection.10
+                        }
+                    }
                     
                     random_system_planet = {
                         limit = {
@@ -603,6 +610,7 @@ country_event = {
     }
 }
 
+# Clear flags
 country_event = {
     id = precursor_selection.9
     hide_window = yes
@@ -611,6 +619,19 @@ country_event = {
     immediate = {
         remove_country_flag = selecting_precursor
         remove_country_flag = selecting_precursor_all
+    }
+}
+
+country_event = {
+    id = precursor_selection.10
+    title = precursor_selection.10.name
+    desc = precursor_selection.10.desc
+    is_triggered_only = yes 
+    picture = GFX_evt_ancient_databank
+    location = event_target:zronispawnplanet
+    
+    option = {
+        name = precursor_selection.10.a
     }
 }
 

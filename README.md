@@ -8,6 +8,18 @@ Baol and Zroni dig-sites will spawn nearby your starting system.
 
 To manually open the precursor selection menu write event `precursor_selection.0` in console.
 
+## Mutiplayer
+Should work fine with some limitations.
+* The Baol and Zroni event chain can only be started once by one player.
+* The ability to select all precursors is disabled. 
+* Normal vanilla behavior will remain so if two or more players select the same precursor only the one that completes the chain first will spawn in the precursor system.
+
+## Compatibility
+Stellaris 2.8.0 (Butler)
+Not Ironman/Achivement compatible.
+No vanilla files were harmed.
+Should be compatible with any mods that do not change how the Baol or Zroni chains starts.
+
 ## Localization
 If you want to help with translation create a fork and edit the respective language file.
 

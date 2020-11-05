@@ -14,3 +14,7 @@
   precursor_selection.0.h:0 "取消"
   precursor_selection.0.i:0 "激活所有先驱者"
   precursor_selection.0.j:0 "禁用先驱者"
+  
+  precursor_selection.10.name:0 "Zroni Spawned"
+  precursor_selection.10.desc:0 "The Zroni digsite have been spawned in the system \"[zronispawnplanet.GetName]\""
+  precursor_selection.10.a:0 "Ok"

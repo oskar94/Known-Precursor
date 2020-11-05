@@ -7,7 +7,7 @@ Baol and Zroni dig-sites will spawn nearby your starting system.
 To manually open the precursor selection menu write [i]event precursor_selection.0[/i] in console.
 
 [h2]Mutiplayer[/h2]
-Should work fine with some limits.
+Should work fine with some limitations.
 [list]
 [*] The Baol and Zroni event chain can only be started once by one player.
 [*] The ability to select all precursors is disabled. 
