@@ -15,7 +15,7 @@ Should work fine with some limitations.
 * Normal vanilla behavior will remain so if two or more players select the same precursor only the one that completes the chain first will spawn in the precursor system.
 
 ## Compatibility
-Stellaris 2.8.0 (Butler)
+Stellaris 3.0.1 (Dick)
 Not Ironman/Achivement compatible.
 No vanilla files were harmed.
 Should be compatible with any mods that do not change how the Baol or Zroni chains starts.

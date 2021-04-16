@@ -239,6 +239,7 @@ country_event = {
                             has_anomaly = no
                             is_star = no
                             NOT = { exists = archaeological_site }
+                            NOT = { has_planet_flag = suppress_archaeological_sites }
                             NOR = {
                                 is_planet_class = pc_gas_giant
                                 is_planet_class = pc_molten
@@ -324,6 +325,7 @@ country_event = {
                             is_preventing_anomaly = no
                             has_anomaly = no 
                             NOT = { exists = archaeological_site }
+                            NOT = { has_planet_flag = suppress_archaeological_sites }
                             habitable_planet = yes
                             OR = {
                                 is_colony = no
