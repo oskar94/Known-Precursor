@@ -25,9 +25,17 @@ country_event = {
             target = THIS
         }
         
-        country_event = {
-            id = story.5  
-            days = 5
+        if = {
+            limit = { 
+                NOT = {
+                    has_country_flag = selecting_precursor_all
+                }
+            }
+            
+            country_event = {
+                id = story.5  
+                days = 30
+            }
         }
         
         precursor_set_flags = {
@@ -61,9 +69,17 @@ country_event = {
             target = THIS
         }
         
-        country_event = {
-            id = story.5  
-            days = 5
+        if = {
+            limit = { 
+                NOT = {
+                    has_country_flag = selecting_precursor_all
+                }
+            }
+            
+            country_event = {
+                id = story.5  
+                days = 30
+            }
         }
         
         precursor_set_flags = {
@@ -97,9 +113,17 @@ country_event = {
             target = THIS
         }
         
-        country_event = {
-            id = story.5  
-            days = 5
+        if = {
+            limit = { 
+                NOT = {
+                    has_country_flag = selecting_precursor_all
+                }
+            }
+            
+            country_event = {
+                id = story.5  
+                days = 30
+            }
         }
         
         precursor_set_flags = {
@@ -133,9 +157,17 @@ country_event = {
             target = THIS
         }
         
-        country_event = {
-            id = story.5  
-            days = 5
+        if = {
+            limit = { 
+                NOT = {
+                    has_country_flag = selecting_precursor_all
+                }
+            }
+            
+            country_event = {
+                id = story.5  
+                days = 30
+            }
         }
         
         precursor_set_flags = {
@@ -169,9 +201,17 @@ country_event = {
             target = THIS
         }
         
-        country_event = {
-            id = story.5  
-            days = 5
+        if = {
+            limit = { 
+                NOT = {
+                    has_country_flag = selecting_precursor_all
+                }
+            }
+            
+            country_event = {
+                id = story.5  
+                days = 30
+            }
         }
         
         precursor_set_flags = {
@@ -213,9 +253,17 @@ country_event = {
             set_global_flag = baol_started
             remove_country_flag = selecting_precursor
             
-            country_event = {
-                id = story.5  
-                days = 5
+            if = {
+                limit = { 
+                    NOT = {
+                        has_country_flag = selecting_precursor_all
+                    }
+                }
+                
+                country_event = {
+                    id = story.5  
+                    days = 30
+                }
             }
             
             precursor_set_flags = {
@@ -302,9 +350,17 @@ country_event = {
             set_global_flag = zroni_started
             remove_country_flag = selecting_precursor
             
-            country_event = {
-                id = story.5  
-                days = 5
+            if = {
+                limit = { 
+                    NOT = {
+                        has_country_flag = selecting_precursor_all
+                    }
+                }
+                
+                country_event = {
+                    id = story.5  
+                    days = 30
+                }
             }
             
             # begin_event_chain = {
@@ -576,6 +632,10 @@ country_event = {
                     days = 0
                 }
             }
+            country_event = {
+                id = story.5  
+                days = 30
+            }
         }
     }
     
@@ -606,7 +666,7 @@ country_event = {
         hidden_effect = {
             country_event = {
                 id = precursor_selection.9
-                days = 5
+                days = 2
             }
         }
     }
