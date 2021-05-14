@@ -15,6 +15,6 @@
   precursor_selection.0.i:0 "Активировать всех предтеч"
   precursor_selection.0.j:0 "Отключить всех предтеч"
   
-  precursor_selection.10.name:0 "Zroni Spawned"
-  precursor_selection.10.desc:0 "The Zroni digsite have been spawned in the system \"[zronispawnplanet.GetName]\""
-  precursor_selection.10.a:0 "Ok"
+  precursor_selection.10.name:0 "Раскопки Зрони"
+  precursor_selection.10.desc:0 "В системе §Y[zronispawnplanet.GetName]§ обнаружены раскопки Зрони."
+  precursor_selection.10.a:0 "Ок"
