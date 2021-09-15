@@ -282,8 +282,8 @@ country_event = {
                         #     min_jumps = 1
                         #     use_bypasses = no
                         # }
+                        NOT = { has_star_flag = sol_system }
                         any_system_planet = {
-                            is_preventing_anomaly = no
                             has_anomaly = no
                             is_star = no
                             NOT = { exists = archaeological_site }
@@ -296,13 +296,14 @@ country_event = {
                     }
                     
                     set_star_flag = first_grunur_site@root
+                    set_star_flag = precursor_baol_1
                     
                     random_system_planet = {
                         limit = {
-                            is_preventing_anomaly = no
                             has_anomaly = no
                             is_star = no
                             NOT = { exists = archaeological_site }
+                            NOT = { has_planet_flag = suppress_archaeological_sites }
                             NOR = {
                                 is_planet_class = pc_gas_giant
                                 is_planet_class = pc_molten
@@ -378,7 +379,6 @@ country_event = {
                     min_steps = 1
                     limit = {
                         any_system_planet = {
-                            is_preventing_anomaly = no
                             has_anomaly = no 
                             NOT = { exists = archaeological_site }
                             NOT = { has_planet_flag = suppress_archaeological_sites }
@@ -404,9 +404,9 @@ country_event = {
                     
                     random_system_planet = {
                         limit = {
-                            is_preventing_anomaly = no
                             has_anomaly = no 
                             NOT = { exists = archaeological_site }
+                            NOT = { has_planet_flag = suppress_archaeological_sites }
                             habitable_planet = yes
                             OR = {
                                 is_colony = no
@@ -567,6 +567,24 @@ country_event = {
         }
     }
     
+    ## Precursor Story Pack
+    
+    # has_global_flag = pspmod_precursor_set_sless
+    # has_global_flag = pspmod_precursor_set_coprean
+    # has_global_flag = pspmod_precursor_set_astanine
+    
+    # option = {
+    #     name = precursor_selection.0.k
+    #     trigger = {
+    #         or = {
+    #             has_global_flag = pspmod_precursor_set_sless
+    #             has_global_flag = pspmod_precursor_set_coprean
+    #             has_global_flag = pspmod_precursor_set_astanine
+    #         }
+    #     }
+    # }
+    
+    
     option = {
         name = precursor_selection.0.i
         trigger = {
@@ -643,6 +661,15 @@ country_event = {
         name = precursor_selection.0.j
         trigger = {
             is_multiplayer = no
+            NOT = {
+                has_country_flag = vultaum_intro
+                has_country_flag = yuht_intro
+                has_country_flag = first_league_intro
+                has_country_flag = irassian_intro
+                has_country_flag = cybrex_intro
+                has_country_flag = baol_intro
+                has_country_flag = zroni_intro
+            }
         }
         hidden_effect = {
             set_country_flag = vultaum_intro
@@ -676,7 +703,6 @@ country_event = {
 country_event = {
     id = precursor_selection.9
     hide_window = yes
-    fire_only_once = yes
     is_triggered_only = yes
     immediate = {
         remove_country_flag = selecting_precursor
