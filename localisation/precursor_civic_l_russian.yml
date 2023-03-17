@@ -1,42 +1,42 @@
-﻿l_russian:
-  precursor_selection.1.name: "Precursor selection"
-  precursor_selection.1.desc: "Select what precursors you want access to. \n§H\nIf no precursor is selected and you confirm you will not get any precursors!§!"
+l_russian:
+  precursor_selection.1.name: "Выбор предтеч"
+  precursor_selection.1.desc: "Выберите, к каким предтечам вы хотите получить доступ. \n§H\nЕсли не выбран не один предтеч из списка и вы нажали§! §Y$precursor_ok$§!§H, то вы не получите и не найдете в космосе ни одного предтеча!§!\n§H\nКнопка§! §Y$precursor_cancel$§! §Hотменит выбор предтеч и закроет это окно, но вы все еще сможете найти предтеч изучая системы.§!"
   
-  precursor_enable_all: "Select all"
-  precursor_disable_all: "Deselect all"
-  precursor_ok: "Confirm selection"
-  precursor_cancel: "Cancel"
+  precursor_enable_all: "Выбрать всех"
+  precursor_disable_all: "Отменить выбор всех"
+  precursor_ok: "§YПодтвердить выбор§!"
+  precursor_cancel: "§YОтмена§!"
   
 
   # Vanilla precursors
-  precursor.1.a: "§GVultaum Star Assembly§!"
-  precursor.1.b: "§RVultaum Star Assembly§!"
-  precursor.2.a: "§GYuht Empire§!"
-  precursor.2.b: "§RYuht Empire§!"
-  precursor.3.a: "§GFirst League§!"
-  precursor.3.b: "§RFirst League§!"
-  precursor.4.a: "§GIrassian Concordat§!"
-  precursor.4.b: "§RIrassian Concordat§!"
-  precursor.5.a: "§GCybrex§!"
-  precursor.5.b: "§RCybrex§!"
+  precursor.1.a: "§GЗвездное сообщество Вультаум§!"
+  precursor.1.b: "§RЗвездное сообщество Вультаум§!"
+  precursor.2.a: "§GЮутская империя§!"
+  precursor.2.b: "§RЮутская империя§!"
+  precursor.3.a: "§GПервая лига§!"
+  precursor.3.b: "§RПервая лига§!"
+  precursor.4.a: "§GИрассианский конкордат§!"
+  precursor.4.b: "§RИрассианский конкордат§!"
+  precursor.5.a: "§GСайбрекс§!"
+  precursor.5.b: "§RСайбрекс§!"
   
   # Ancient Relics DLC
-  precursor.6.a: "§GBaol§!"
-  precursor.6.b: "§RBaol§!"
-  precursor.7.a: "§GZroni§!"
-  precursor.7.b: "§RZroni§!"
+  precursor.6.a: "§GБаол§!"
+  precursor.6.b: "§RБаол§!"
+  precursor.7.a: "§GЗрони§!"
+  precursor.7.b: "§RЗрони§!"
   
   # Precursor Story Pack
-  precursor.8.a: "§GSless Alliance§!"
-  precursor.8.b: "§RSless Alliance§!"
-  precursor.9.a: "§GCoprean Constitution§!"
-  precursor.9.b: "§RCoprean Constitution§!"
-  precursor.10.a: "§GAstanine Empire§!"
-  precursor.10.b: "§RAstanine Empire§!"
+  precursor.8.a: "§GАльянс Слесс§!"
+  precursor.8.b: "§RАльянс Слесс§!"
+  precursor.9.a: "§GКопрейская конституция§!"
+  precursor.9.b: "§RКопрейская конституция§!"
+  precursor.10.a: "§GИмперия Астанин§!"
+  precursor.10.b: "§RИмперия Астанин§!"
   
   # Forgotten History
-  precursor.11.a: "§GPlexian Swarm§!"
-  precursor.11.b: "§RPlexian Swarm§!"
-  precursor.12.a: "§GLartia§!"
-  precursor.12.b: "§RLartia§!"
+  precursor.11.a: "§GПлексианский рой§!"
+  precursor.11.b: "§RПлексианский рой§!"
+  precursor.12.a: "§GЛартия§!"
+  precursor.12.b: "§RЛартия§!"
   
