@@ -21,22 +21,21 @@
   precursor.5.b: "§RCybrex§!"
   
   # Ancient Relics DLC
-  precursor.6.a: "§GBaol§!"
-  precursor.6.b: "§RBaol§!"
-  precursor.7.a: "§GZroni§!"
-  precursor.7.b: "§RZroni§!"
+  precursor.6.a: "§GBaol §W(§YUnique§W)§!"
+  precursor.6.b: "§RBaol §W(§YUnique§W)§!"
+  precursor.7.a: "§GZroni §W(§YUnique§W)§!"
+  precursor.7.b: "§RZroni §W(§YUnique§W)§!"
   
   # Precursor Story Pack
-  precursor.8.a: "§GSless Alliance§!"
-  precursor.8.b: "§RSless Alliance§!"
-  precursor.9.a: "§GCoprean Constitution§!"
-  precursor.9.b: "§RCoprean Constitution§!"
-  precursor.10.a: "§GAstanine Empire§!"
-  precursor.10.b: "§RAstanine Empire§!"
+  precursor.8.a: "§GSless Alliance §W(§YUnique§W)§!"
+  precursor.8.b: "§RSless Alliance §W(§YUnique§W)§!"
+  precursor.9.a: "§GCoprean Constitution §W(§YUnique§W)§!"
+  precursor.9.b: "§RCoprean Constitution §W(§YUnique§W)§!"
+  precursor.10.a: "§GAstanine Empire §W(§YUnique§W)§!"
+  precursor.10.b: "§RAstanine Empire §W(§YUnique§W)§!"
   
   # Forgotten History
-  precursor.11.a: "§GPlexian Swarm§!"
-  precursor.11.b: "§RPlexian Swarm§!"
-  precursor.12.a: "§GLartia§!"
-  precursor.12.b: "§RLartia§!"
-  
+  precursor.11.a: "§GPlexian Swarm §W(§YUnique§W)§!"
+  precursor.11.b: "§RPlexian Swarm §W(§YUnique§W)§!"
+  precursor.12.a: "§GLartia §W(§YUnique§W)§!"
+  precursor.12.b: "§RLartia §W(§YUnique§W)§!"

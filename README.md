@@ -21,3 +21,4 @@ Has built in compatibility with [Precursor Story Pack](https://steamcommunity.co
 If you want to help with translation create a fork and edit the respective language file.
 
 * English: [Oskar94](https://github.com/oskar94) 
+* Russian: [Agress0r](https://github.com/Agress0r)
