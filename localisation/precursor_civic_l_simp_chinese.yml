@@ -1,20 +1,42 @@
 ﻿l_simp_chinese:
-  edict_select_precursor:0 "选择先驱者"
-  edict_select_precursor_desc:0 "容许你选择你的先驱者"
+  precursor_selection.1.name: "Precursor selection"
+  precursor_selection.1.desc: "Select what precursors you want access to. \n§H\nIf no precursor is selected and you confirm you will not get any precursors!§!"
   
-  precursor_selection.0.name:0 "选择先驱者"
-  precursor_selection.0.desc:0 "选择你的先驱者"
-  precursor_selection.0.a:0 "沃陶姆"
-  precursor_selection.0.b:0 "尤特"
-  precursor_selection.0.c:0 "第一联盟"
-  precursor_selection.0.d:0 "伊瑞森"
-  precursor_selection.0.e:0 "赛博勒克斯"
-  precursor_selection.0.f:0 "巴奥"
-  precursor_selection.0.g:0 "泽洛族"
-  precursor_selection.0.h:0 "取消"
-  precursor_selection.0.i:0 "激活所有先驱者"
-  precursor_selection.0.j:0 "禁用先驱者"
+  precursor_enable_all: "Select all"
+  precursor_disable_all: "Deselect all"
+  precursor_ok: "Confirm selection"
+  precursor_cancel: "Cancel"
   
-  precursor_selection.10.name:0 "Zroni Spawned"
-  precursor_selection.10.desc:0 "The Zroni digsite have been spawned in the system \"[zronispawnplanet.GetName]\""
-  precursor_selection.10.a:0 "Ok"
+
+  # Vanilla precursors
+  precursor.1.a: "§GVultaum Star Assembly§!"
+  precursor.1.b: "§RVultaum Star Assembly§!"
+  precursor.2.a: "§GYuht Empire§!"
+  precursor.2.b: "§RYuht Empire§!"
+  precursor.3.a: "§GFirst League§!"
+  precursor.3.b: "§RFirst League§!"
+  precursor.4.a: "§GIrassian Concordat§!"
+  precursor.4.b: "§RIrassian Concordat§!"
+  precursor.5.a: "§GCybrex§!"
+  precursor.5.b: "§RCybrex§!"
+  
+  # Ancient Relics DLC
+  precursor.6.a: "§GBaol§!"
+  precursor.6.b: "§RBaol§!"
+  precursor.7.a: "§GZroni§!"
+  precursor.7.b: "§RZroni§!"
+  
+  # Precursor Story Pack
+  precursor.8.a: "§GSless Alliance§!"
+  precursor.8.b: "§RSless Alliance§!"
+  precursor.9.a: "§GCoprean Constitution§!"
+  precursor.9.b: "§RCoprean Constitution§!"
+  precursor.10.a: "§GAstanine Empire§!"
+  precursor.10.b: "§RAstanine Empire§!"
+  
+  # Forgotten History
+  precursor.11.a: "§GPlexian Swarm§!"
+  precursor.11.b: "§RPlexian Swarm§!"
+  precursor.12.a: "§GLartia§!"
+  precursor.12.b: "§RLartia§!"
+  

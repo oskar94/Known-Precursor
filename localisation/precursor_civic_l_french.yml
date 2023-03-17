@@ -1,20 +1,42 @@
 ﻿l_french:
-  edict_select_precursor:0 "Sélection de précurseur"
-  edict_select_precursor_desc:0 "Vous autorise à choisir votre empire précurseur."
- 
-  precursor_selection.0.name:0 "Sélection de Précurseur"
-  precursor_selection.0.desc:0 "Sélectionner votre précurseur."
-  precursor_selection.0.a:0 "L'Assemblée stellaire Vultaum"
-  precursor_selection.0.b:0 "L'Empire Yuht"
-  precursor_selection.0.c:0 "La Première Ligue"
-  precursor_selection.0.d:0 "Le Pacte Irassien"
-  precursor_selection.0.e:0 "La Cybrex"
-  precursor_selection.0.f:0 "Les Baol"
-  precursor_selection.0.g:0 "Les Zroni"
-  precursor_selection.0.h:0 "Annuler"
-  precursor_selection.0.i:0 "Activer tous les précuseurs"
-  precursor_selection.0.j:0 "Désactiver tous les précurseurs"
+  precursor_selection.1.name: "Precursor selection"
+  precursor_selection.1.desc: "Select what precursors you want access to. \n§H\nIf no precursor is selected and you confirm you will not get any precursors!§!"
   
-  precursor_selection.10.name:0 "Zroni Spawned"
-  precursor_selection.10.desc:0 "The Zroni digsite have been spawned in the system \"[zronispawnplanet.GetName]\""
-  precursor_selection.10.a:0 "Ok"
+  precursor_enable_all: "Select all"
+  precursor_disable_all: "Deselect all"
+  precursor_ok: "Confirm selection"
+  precursor_cancel: "Cancel"
+  
+
+  # Vanilla precursors
+  precursor.1.a: "§GVultaum Star Assembly§!"
+  precursor.1.b: "§RVultaum Star Assembly§!"
+  precursor.2.a: "§GYuht Empire§!"
+  precursor.2.b: "§RYuht Empire§!"
+  precursor.3.a: "§GFirst League§!"
+  precursor.3.b: "§RFirst League§!"
+  precursor.4.a: "§GIrassian Concordat§!"
+  precursor.4.b: "§RIrassian Concordat§!"
+  precursor.5.a: "§GCybrex§!"
+  precursor.5.b: "§RCybrex§!"
+  
+  # Ancient Relics DLC
+  precursor.6.a: "§GBaol§!"
+  precursor.6.b: "§RBaol§!"
+  precursor.7.a: "§GZroni§!"
+  precursor.7.b: "§RZroni§!"
+  
+  # Precursor Story Pack
+  precursor.8.a: "§GSless Alliance§!"
+  precursor.8.b: "§RSless Alliance§!"
+  precursor.9.a: "§GCoprean Constitution§!"
+  precursor.9.b: "§RCoprean Constitution§!"
+  precursor.10.a: "§GAstanine Empire§!"
+  precursor.10.b: "§RAstanine Empire§!"
+  
+  # Forgotten History
+  precursor.11.a: "§GPlexian Swarm§!"
+  precursor.11.b: "§RPlexian Swarm§!"
+  precursor.12.a: "§GLartia§!"
+  precursor.12.b: "§RLartia§!"
+  

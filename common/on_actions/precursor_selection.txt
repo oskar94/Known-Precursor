@@ -1,5 +1,12 @@
+
 on_game_start = {
 	events = {
 		precursor_selection.9999
+	}
+}
+
+on_press_begin = {
+	events = {
+		precursor_selection.1
 	}
 }

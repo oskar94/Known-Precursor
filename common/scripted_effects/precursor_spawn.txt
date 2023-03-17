@@ -2,20 +2,29 @@ precursor_set_flags = {
 	every_system = {
 		limit = {
 			distance = {
-				source = ROOT.home_planet
-				max_jumps = 3
+				source = prev.capital_star
+				max_jumps = 4
 				min_jumps = 1
 				use_bypasses = no
 			}
 		}
-		set_star_flag = $precursor$
+		
+		if = { limit = { prev = { has_country_flag = precursor_select_1 } } set_star_flag = precursor_1 }
+		if = { limit = { prev = { has_country_flag = precursor_select_2 } } set_star_flag = precursor_2 }
+		if = { limit = { prev = { has_country_flag = precursor_select_3 } } set_star_flag = precursor_3 }
+		if = { limit = { prev = { has_country_flag = precursor_select_4 } } set_star_flag = precursor_4 }
+		if = { limit = { prev = { has_country_flag = precursor_select_5 } } set_star_flag = precursor_5 }
+		if = { limit = { prev = { has_country_flag = precursor_select_6 } } set_star_flag = precursor_baol_1 }
+		if = { limit = { prev = { has_country_flag = precursor_select_7 } } set_star_flag = precursor_zroni_1 }
+		if = { limit = { prev = { has_country_flag = precursor_select_11 } } set_star_flag = precursor_plexi_1 }
+		if = { limit = { prev = { has_country_flag = precursor_select_12 } } set_star_flag = precursor_lartia_1 }
 	}
 	
 	every_system = {
 		limit = {
 			distance = {
-				source = ROOT.home_planet
-				max_jumps = 20
+				source = prev.capital_star
+				max_jumps = 12
 				min_jumps = 3
 				use_bypasses = no
 			}
@@ -24,11 +33,23 @@ precursor_set_flags = {
 			}
 		}
 		
-		random_list = {
-			20 = {
-				set_star_flag = $precursor$
-			}
-			80 = {}
-		}
+		if = { limit = { prev = { has_country_flag = precursor_select_1  } } random_list = { 40 = { set_star_flag = precursor_1 		} 60 = { } } }
+		if = { limit = { prev = { has_country_flag = precursor_select_2  } } random_list = { 40 = { set_star_flag = precursor_2 		} 60 = { } } }
+		if = { limit = { prev = { has_country_flag = precursor_select_3  } } random_list = { 40 = { set_star_flag = precursor_3 		} 60 = { } } }
+		if = { limit = { prev = { has_country_flag = precursor_select_4  } } random_list = { 40 = { set_star_flag = precursor_4 		} 60 = { } } }
+		if = { limit = { prev = { has_country_flag = precursor_select_5  } } random_list = { 40 = { set_star_flag = precursor_5 		} 60 = { } } }
+		if = { limit = { prev = { has_country_flag = precursor_select_6  } } random_list = { 40 = { set_star_flag = precursor_baol_1 	} 60 = { } } }
+		if = { limit = { prev = { has_country_flag = precursor_select_7  } } random_list = { 40 = { set_star_flag = precursor_zroni_1 	} 60 = { } } }
+		if = { limit = { prev = { has_country_flag = precursor_select_11 } } random_list = { 40 = { set_star_flag = precursor_plexi_1 	} 60 = { } } }
+		if = { limit = { prev = { has_country_flag = precursor_select_12 } } random_list = { 40 = { set_star_flag = precursor_lartia_1 	} 60 = { } } }
+	}
+}
+
+precursor_start_chain = {
+	set_country_flag = $precursor$_intro
+	
+	begin_event_chain = {
+		event_chain = $precursor$_chain
+		target = THIS
 	}
 }
