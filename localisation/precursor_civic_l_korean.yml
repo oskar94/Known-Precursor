@@ -1,42 +1,41 @@
-﻿l_korean:
-  precursor_selection.1.name: "Precursor selection"
-  precursor_selection.1.desc: "Select what precursors you want access to. \n§H\nIf no precursor is selected and you confirm you will not get any precursors!§!"
+l_korean:
+  precursor_selection.1.name: "선구자 선택"
+  precursor_selection.1.desc: "이벤트를 시작하고 싶은 선구자를 선택하세요. \n§H\n만약 아무 선구자도 선택하지 않았다면 어떠한 선구자 이벤트도 시작하지 못합니다!§!"
   
-  precursor_enable_all: "Select all"
-  precursor_disable_all: "Deselect all"
-  precursor_ok: "Confirm selection"
-  precursor_cancel: "Cancel"
+  precursor_enable_all: "모두 선택"
+  precursor_disable_all: "모두 선택 취소"
+  precursor_ok: "선택 확인"
+  precursor_cancel: "취소"
   
 
   # Vanilla precursors
-  precursor.1.a: "§GVultaum Star Assembly§!"
-  precursor.1.b: "§RVultaum Star Assembly§!"
-  precursor.2.a: "§GYuht Empire§!"
-  precursor.2.b: "§RYuht Empire§!"
-  precursor.3.a: "§GFirst League§!"
-  precursor.3.b: "§RFirst League§!"
-  precursor.4.a: "§GIrassian Concordat§!"
-  precursor.4.b: "§RIrassian Concordat§!"
-  precursor.5.a: "§GCybrex§!"
-  precursor.5.b: "§RCybrex§!"
+  precursor.1.a: "§G벌타움 성간 의회§!"
+  precursor.1.b: "§R벌타움 성간 의회§!"
+  precursor.2.a: "§G유트 제국§!"
+  precursor.2.b: "§R유트 제국§!"
+  precursor.3.a: "§G첫 번째 연맹§!"
+  precursor.3.b: "§R첫 번째 연맹§!"
+  precursor.4.a: "§G이라시안 협정국§!"
+  precursor.4.b: "§R이라시안 협정국§!"
+  precursor.5.a: "§G사이브렉스§!"
+  precursor.5.b: "§R사이브렉스§!"
   
   # Ancient Relics DLC
-  precursor.6.a: "§GBaol§!"
-  precursor.6.b: "§RBaol§!"
-  precursor.7.a: "§GZroni§!"
-  precursor.7.b: "§RZroni§!"
+  precursor.6.a: "§G바올 §W(§Y고유§W)§!"
+  precursor.6.b: "§R바올 §W(§Y고유§W)§!"
+  precursor.7.a: "§G즈로니 §W(§Y고유§W)§!"
+  precursor.7.b: "§R즈로니 §W(§Y고유§W)§!"
   
   # Precursor Story Pack
-  precursor.8.a: "§GSless Alliance§!"
-  precursor.8.b: "§RSless Alliance§!"
-  precursor.9.a: "§GCoprean Constitution§!"
-  precursor.9.b: "§RCoprean Constitution§!"
-  precursor.10.a: "§GAstanine Empire§!"
-  precursor.10.b: "§RAstanine Empire§!"
+  precursor.8.a: "§G슬레스 동맹 §W(§Y고유§W)§!"
+  precursor.8.b: "§R슬레스 동맹 §W(§Y고유§W)§!"
+  precursor.9.a: "§G코프레아 헌법 §W(§Y고유§W)§!"
+  precursor.9.b: "§R코프레아 헌법 §W(§Y고유§W)§!"
+  precursor.10.a: "§G아스타닌 제국 §W(§Y고유§W)§!"
+  precursor.10.b: "§R아스타닌 제국 §W(§Y고유§W)§!"
   
   # Forgotten History
-  precursor.11.a: "§GPlexian Swarm§!"
-  precursor.11.b: "§RPlexian Swarm§!"
-  precursor.12.a: "§GLartia§!"
-  precursor.12.b: "§RLartia§!"
-  
+  precursor.11.a: "§G플렉시안 스웜 §W(§Y고유§W)§!"
+  precursor.11.b: "§R플렉시안 스웜 §W(§Y고유§W)§!"
+  precursor.12.a: "§G라르티아 §W(§Y고유§W)§!"
+  precursor.12.b: "§R라르티아 §W(§Y고유§W)§!"
