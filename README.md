@@ -22,3 +22,4 @@ If you want to help with translation create a fork and edit the respective langu
 
 * English: [Oskar94](https://github.com/oskar94) 
 * Russian: [Agress0r](https://github.com/Agress0r)
+* Korean: [joy9708](https://github.com/joy9708)
