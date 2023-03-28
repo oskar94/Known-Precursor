@@ -30,340 +30,26 @@ country_event = {
 	is_triggered_only = yes 
 	picture = GFX_evt_ancient_databank
 	
-	
-	# Precursor Toggles
-	
-	# Vultaum Star Assembly
+	# Cancel selection 
 	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_1 }
-			text = precursor.1.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_1 } }
-			text = precursor.1.b
-		}
+		name = precursor_cancel
 		
 		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_1 }
-				remove_country_flag = precursor_select_1
-			} else = { set_country_flag = precursor_select_1 }
-		}
-	}
-	
-	# Yuth Empire
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_2 }
-			text = precursor.2.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_2 } }
-			text = precursor.2.b
-		}
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_2 }
-				remove_country_flag = precursor_select_2
-			} else = { set_country_flag = precursor_select_2 }
-		}
-	}
-	
-	# First League
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_3 }
-			text = precursor.3.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_3 } }
-			text = precursor.3.b
-		}
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_3 }
-				remove_country_flag = precursor_select_3
-			} else = { set_country_flag = precursor_select_3 }
-		}
-	}
-	
-	# Irassian Concordat
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_4 }
-			text = precursor.4.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_4 } }
-			text = precursor.4.b
-		}
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_4 }
-				remove_country_flag = precursor_select_4
-			} else = { set_country_flag = precursor_select_4 }
-		}
-	}
-	
-	# Cybrex
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_5 }
-			text = precursor.5.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_5 } }
-			text = precursor.5.b
-		}
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_5 }
-				remove_country_flag = precursor_select_5
-			} else = { set_country_flag = precursor_select_5 }
-		}
-	}
-	
-	# Ancient Relics - DLC
-	# Baol
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_6 }
-			text = precursor.6.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_6 } }
-			text = precursor.6.b
-		}
-		
-		trigger = { host_has_dlc = "Ancient Relics Story Pack" }
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_6 }
-				remove_country_flag = precursor_select_6
-			} else = { set_country_flag = precursor_select_6 }
-		}
-	}
-	
-	# Zroni
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_7 }
-			text = precursor.7.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_7 } }
-			text = precursor.7.b
-		}
-		
-		trigger = { host_has_dlc = "Ancient Relics Story Pack" }
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_7 }
-				remove_country_flag = precursor_select_7
-			} else = { set_country_flag = precursor_select_7 }
-		}
-	}
-	
-	# Precursor Story Pack - Mod
-	# Sless Alliance
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_8 }
-			text = precursor.8.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_8 } }
-			text = precursor.8.b
-		}
-		
-		trigger = { has_global_flag = xvcv_precursor_story_pack_active }
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_8 }
-				remove_country_flag = precursor_select_8
-			} else = { set_country_flag = precursor_select_8 }
-		}
-	}
-	
-	# Coprean Constitution
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_9 }
-			text = precursor.9.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_9 } }
-			text = precursor.9.b
-		}
-		
-		trigger = { has_global_flag = xvcv_precursor_story_pack_active }
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_9 }
-				remove_country_flag = precursor_select_9
-			} else = { set_country_flag = precursor_select_9 }
-		}
-	}
-	
-	# Astanine Empire
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_10 }
-			text = precursor.10.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_10 } }
-			text = precursor.10.b
-		}
-		
-		trigger = { has_global_flag = xvcv_precursor_story_pack_active }
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_10 }
-				remove_country_flag = precursor_select_10
-			} else = { set_country_flag = precursor_select_10 }
-		}
-	}
-	
-	# Forgotten History - Mod
-	# Plexian Swarm
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_11 }
-			text = precursor.11.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_11 } }
-			text = precursor.11.b
-		}
-		
-		trigger = { has_global_flag = forgotten_history_installed }
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_11 }
-				remove_country_flag = precursor_select_11
-			} else = { set_country_flag = precursor_select_11 }
-		}
-	}
-	
-	# Lartia
-	option = {
-		name = {
-			trigger = { has_country_flag = precursor_select_12 }
-			text = precursor.12.a
-		}
-		
-		name = {
-			trigger = { not = { has_country_flag = precursor_select_12 } }
-			text = precursor.12.b
-		}
-		
-		trigger = { has_global_flag = forgotten_history_installed }
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_12 }
-				remove_country_flag = precursor_select_12
-			} else = { set_country_flag = precursor_select_12 }
-		}
-	}
-	
-	# Select all
-	option = {
-		name = precursor_enable_all
-		
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
-			set_country_flag = precursor_select_1
-			set_country_flag = precursor_select_2
-			set_country_flag = precursor_select_3
-			set_country_flag = precursor_select_4
-			set_country_flag = precursor_select_5
-			
-			if = {
-				limit = { host_has_dlc = "Ancient Relics Story Pack" }
-				set_country_flag = precursor_select_6
-				set_country_flag = precursor_select_7
-			}
-			
-			if = {
-				limit = { has_global_flag = xvcv_precursor_story_pack_active }
-				set_country_flag = precursor_select_8
-				set_country_flag = precursor_select_9
-				set_country_flag = precursor_select_10
-			}
-			
-			if = {
-				limit = { has_global_flag = forgotten_history_installed }
-				set_country_flag = precursor_select_11
-				set_country_flag = precursor_select_12
-			}
-		}
-	}
-	
-	# Deselect all
-	option = {
-		name = precursor_disable_all
-		hidden_effect = {
-			country_event = { id = precursor_selection.1 }
 			remove_country_flag = precursor_select_1
 			remove_country_flag = precursor_select_2
 			remove_country_flag = precursor_select_3
 			remove_country_flag = precursor_select_4
 			remove_country_flag = precursor_select_5
-			
-			if = {
-				limit = { host_has_dlc = "Ancient Relics Story Pack" }
-				remove_country_flag = precursor_select_6
-				remove_country_flag = precursor_select_7
-			}
-			
-			if = {
-				limit = { has_global_flag = xvcv_precursor_story_pack_active }
-				remove_country_flag = precursor_select_8
-				remove_country_flag = precursor_select_9
-				remove_country_flag = precursor_select_10
-			}
-			
-			if = {
-				limit = { has_global_flag = forgotten_history_installed }
-				remove_country_flag = precursor_select_11
-				remove_country_flag = precursor_select_12
-			}
+			remove_country_flag = precursor_select_6
+			remove_country_flag = precursor_select_7
+			remove_country_flag = precursor_select_8
+			remove_country_flag = precursor_select_9
+			remove_country_flag = precursor_select_10
+			remove_country_flag = precursor_select_11
+			remove_country_flag = precursor_select_12
+			remove_country_flag = precursor_select_13
+			remove_country_flag = precursor_select_14
+			remove_country_flag = precursor_select_15 
 		}
 	}
 	
@@ -389,11 +75,13 @@ country_event = {
 				
 				capital_star = {
 					closest_system = {
-						max_steps = 10
-						min_steps = 2
+						# max_steps = 10
+						min_steps = 1
 						limit = {
 							NOT = { has_star_flag = sol_system }
+							# NOT = { has_star_flag = empire_home_system }
 							any_system_planet = {
+								is_preventing_anomaly = no
 								has_anomaly = no
 								is_star = no
 								NOT = { exists = archaeological_site }
@@ -410,6 +98,7 @@ country_event = {
 						
 						random_system_planet = {
 							limit = {
+								is_preventing_anomaly = no
 								has_anomaly = no
 								is_star = no
 								NOT = { exists = archaeological_site }
@@ -504,11 +193,13 @@ country_event = {
 				
 				capital_star = {
 					closest_system = {
-						max_steps = 10
+						# max_steps = 10
 						min_steps = 1
 						limit = {
 							NOT = { has_star_flag = sol_system }
+							# NOT = { has_star_flag = empire_home_system }
 							any_system_planet = {
+								is_preventing_anomaly = no
 								has_anomaly = no
 								is_star = no
 								NOT = { exists = archaeological_site }
@@ -526,6 +217,7 @@ country_event = {
 						
 						random_system_planet = {
 							limit = {
+								is_preventing_anomaly = no
 								has_anomaly = no
 								is_star = no
 								NOT = { exists = archaeological_site }
@@ -554,11 +246,13 @@ country_event = {
 				
 				capital_star = {
 					closest_system = {
-						max_steps = 10
+						# max_steps = 10
 						min_steps = 1
 						limit = {
 							NOT = { has_star_flag = sol_system }
+							# NOT = { has_star_flag = empire_home_system }
 							any_system_planet = {
+								is_preventing_anomaly = no
 								has_anomaly = no
 								is_star = no
 								NOT = { exists = archaeological_site }
@@ -577,6 +271,7 @@ country_event = {
 						
 						random_system_planet = {
 							limit = {
+								is_preventing_anomaly = no
 								has_anomaly = no
 								is_star = no
 								NOT = { exists = archaeological_site }
@@ -595,29 +290,620 @@ country_event = {
 				}
 			}
 			
+			if = { # More Precursors - Ixardian Corporation
+				limit = {
+					has_country_flag = precursor_select_13
+					not = { has_global_flag = ixardian_started }
+				}
+				
+				set_global_flag = ixardian_started
+				set_country_flag = ixardian_intro
+				
+				capital_star = {
+					closest_system = {
+						# max_steps = 10
+						min_steps = 1
+						limit = {
+							NOT = { has_star_flag = sol_system }
+							# NOT = { has_star_flag = empire_home_system }
+							any_system_planet = {
+								is_preventing_anomaly = no
+								has_anomaly = no
+								is_star = no
+								NOT = { exists = archaeological_site }
+								NOT = { has_planet_flag = suppress_archaeological_sites }
+								FHMP_is_valid_precursor_planet = yes
+							}
+						}
+						
+						set_star_flag = precursor_ixardian_1
+						set_star_flag = first_ixardian_site@root
+						
+						random_system_planet = {
+							limit = {
+								is_preventing_anomaly = no
+								has_anomaly = no
+								is_star = no
+								NOT = { exists = archaeological_site }
+								NOT = { has_planet_flag = suppress_archaeological_sites }
+								FHMP_is_valid_precursor_planet = yes
+							}
+							create_archaeological_site = ixardian_digsite_1
+							prevent_anomaly = yes
+						}
+					}
+				}
+			}
+			
+			if = { # More Precursors - Werediran Signal
+				limit = {
+					has_country_flag = precursor_select_14
+					not = { has_global_flag = werediran_started }
+				}
+				
+				set_global_flag = werediran_started
+				set_country_flag = werediran_intro
+				
+				capital_star = {
+					closest_system = {
+						# max_steps = 10
+						min_steps = 1
+						limit = {
+							NOT = { has_star_flag = sol_system }
+							# NOT = { has_star_flag = empire_home_system }
+							any_system_planet = {
+								is_preventing_anomaly = no
+								has_anomaly = no
+								is_star = no
+								NOT = { exists = archaeological_site }
+								NOT = { has_planet_flag = suppress_archaeological_sites }
+								OR = {
+									is_planet_class = pc_alpine
+									is_planet_class = pc_tropical
+									is_planet_class = pc_continental
+								}
+							}
+						}
+						
+						set_star_flag = precursor_werediran_1
+						set_star_flag = first_werediran_site@root
+						
+						random_system_planet = {
+							limit = {
+								is_preventing_anomaly = no
+								has_anomaly = no
+								is_star = no
+								NOT = { exists = archaeological_site }
+								NOT = { has_planet_flag = suppress_archaeological_sites }
+								OR = {
+									is_planet_class = pc_alpine
+									is_planet_class = pc_tropical
+									is_planet_class = pc_continental
+								}
+							}
+							create_archaeological_site = werediran_digsite_1
+							save_global_event_target_as = werediran_planet_1
+							prevent_anomaly = yes
+						}
+					}
+				}
+			}
+			
+			if = { # More Precursors - Ezentian Combine
+				limit = {
+					has_country_flag = precursor_select_15
+					not = { has_global_flag = ezentian_started }
+				}
+				
+				set_global_flag = ezentian_started
+				set_country_flag = ezentian_intro
+				
+				capital_star = {
+					closest_system = {
+						# max_steps = 10
+						min_steps = 1
+						limit = {
+							NOT = { has_star_flag = sol_system }
+							# NOT = { has_star_flag = empire_home_system }
+							any_system_planet = {
+								is_preventing_anomaly = no
+								has_anomaly = no
+								is_star = no
+								NOT = { exists = archaeological_site }
+								NOT = { has_planet_flag = suppress_archaeological_sites }
+								OR = {
+									is_planet_class = pc_barren
+									is_planet_class = pc_barren_cold
+								}
+								NOT = { has_modifier = terraforming_candidate }
+							}
+						}
+						
+						set_star_flag = precursor_ezentian_1
+						set_star_flag = first_ezentian_site@root
+						
+						random_system_planet = {
+							limit = {
+								is_preventing_anomaly = no
+								has_anomaly = no
+								is_star = no
+								NOT = { exists = archaeological_site }
+								NOT = { has_planet_flag = suppress_archaeological_sites }
+								OR = {
+									is_planet_class = pc_barren
+									is_planet_class = pc_barren_cold
+								}
+								NOT = { has_modifier = terraforming_candidate }
+							}
+							create_archaeological_site = ezentian_digsite_1
+							save_global_event_target_as = ezentian_planet_1
+							change_pc = pc_broken
+							set_planet_flag = FHMP_ezentian_planet_1
+							prevent_anomaly = yes
+						}
+					}
+				}
+			}
+			
+			
 			country_event = { id = story.5 days = 1 }
 			set_country_flag = vultaum_intro
 			precursor_set_flags = yes
 		}
 	}
 	
-	# Cancel selection 
+	# Select all
 	option = {
-		name = precursor_cancel
+		name = precursor_enable_all
 		
 		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			set_country_flag = precursor_select_1
+			set_country_flag = precursor_select_2
+			set_country_flag = precursor_select_3
+			set_country_flag = precursor_select_4
+			set_country_flag = precursor_select_5
+			
+			if = {
+				limit = { host_has_dlc = "Ancient Relics Story Pack" }
+				set_country_flag = precursor_select_6
+				set_country_flag = precursor_select_7
+			}
+			
+			if = {
+				limit = { has_global_flag = xvcv_precursor_story_pack_active }
+				set_country_flag = precursor_select_8
+				set_country_flag = precursor_select_9
+				set_country_flag = precursor_select_10
+			}
+			
+			if = {
+				limit = { has_global_flag = forgotten_history_installed }
+				set_country_flag = precursor_select_11
+				set_country_flag = precursor_select_12
+			}
+			
+			if = {
+				limit = { has_global_flag = more_precursors_installed }
+				set_country_flag = precursor_select_13
+				set_country_flag = precursor_select_14
+				set_country_flag = precursor_select_15
+			}
+		}
+	}
+	
+	# Deselect all
+	option = {
+		name = precursor_disable_all
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
 			remove_country_flag = precursor_select_1
 			remove_country_flag = precursor_select_2
 			remove_country_flag = precursor_select_3
 			remove_country_flag = precursor_select_4
 			remove_country_flag = precursor_select_5
-			remove_country_flag = precursor_select_6
-			remove_country_flag = precursor_select_7
-			remove_country_flag = precursor_select_8
-			remove_country_flag = precursor_select_9
-			remove_country_flag = precursor_select_10
-			remove_country_flag = precursor_select_11
-			remove_country_flag = precursor_select_12
+			
+			if = {
+				limit = { host_has_dlc = "Ancient Relics Story Pack" }
+				remove_country_flag = precursor_select_6
+				remove_country_flag = precursor_select_7
+			}
+			
+			if = {
+				limit = { has_global_flag = xvcv_precursor_story_pack_active }
+				remove_country_flag = precursor_select_8
+				remove_country_flag = precursor_select_9
+				remove_country_flag = precursor_select_10
+			}
+			
+			if = {
+				limit = { has_global_flag = forgotten_history_installed }
+				remove_country_flag = precursor_select_11
+				remove_country_flag = precursor_select_12
+			}
+			
+			if = {
+				limit = { has_global_flag = more_precursors_installed }
+				remove_country_flag = precursor_select_13
+				remove_country_flag = precursor_select_14
+				remove_country_flag = precursor_select_15
+			}
+		}
+	}
+	
+	# Precursor Toggles
+	
+	# Vanilla
+	# Vultaum Star Assembly
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_1 }
+			text = precursor.1.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_1 } }
+			text = precursor.1.b
+		}
+		
+		custom_tooltip = precursor.1.c
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_1 }
+				remove_country_flag = precursor_select_1
+			} else = { set_country_flag = precursor_select_1 }
+		}
+	}
+	
+	# Yuth Empire
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_2 }
+			text = precursor.2.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_2 } }
+			text = precursor.2.b
+		}
+		
+		custom_tooltip = precursor.2.c
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_2 }
+				remove_country_flag = precursor_select_2
+			} else = { set_country_flag = precursor_select_2 }
+		}
+	}
+	
+	# First League
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_3 }
+			text = precursor.3.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_3 } }
+			text = precursor.3.b
+		}
+		
+		custom_tooltip = precursor.3.c
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_3 }
+				remove_country_flag = precursor_select_3
+			} else = { set_country_flag = precursor_select_3 }
+		}
+	}
+	
+	# Irassian Concordat
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_4 }
+			text = precursor.4.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_4 } }
+			text = precursor.4.b
+		}
+		
+		custom_tooltip = precursor.4.c
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_4 }
+				remove_country_flag = precursor_select_4
+			} else = { set_country_flag = precursor_select_4 }
+		}
+	}
+	
+	# Cybrex
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_5 }
+			text = precursor.5.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_5 } }
+			text = precursor.5.b
+		}
+		
+		custom_tooltip = precursor.5.c
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_5 }
+				remove_country_flag = precursor_select_5
+			} else = { set_country_flag = precursor_select_5 }
+		}
+	}
+	
+	
+	# Ancient Relics - DLC
+	# Baol
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_6 }
+			text = precursor.6.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_6 } }
+			text = precursor.6.b
+		}
+		
+		custom_tooltip = precursor.6.c
+		
+		trigger = { host_has_dlc = "Ancient Relics Story Pack" }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_6 }
+				remove_country_flag = precursor_select_6
+			} else = { set_country_flag = precursor_select_6 }
+		}
+	}
+	
+	# Zroni
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_7 }
+			text = precursor.7.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_7 } }
+			text = precursor.7.b
+		}
+		
+		custom_tooltip = precursor.7.c
+		
+		trigger = { host_has_dlc = "Ancient Relics Story Pack" }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_7 }
+				remove_country_flag = precursor_select_7
+			} else = { set_country_flag = precursor_select_7 }
+		}
+	}
+	
+	
+	# Precursor Story Pack - Mod
+	# Sless Alliance
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_8 }
+			text = precursor.8.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_8 } }
+			text = precursor.8.b
+		}
+		
+		custom_tooltip = precursor.8.c
+		
+		trigger = { has_global_flag = xvcv_precursor_story_pack_active }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_8 }
+				remove_country_flag = precursor_select_8
+			} else = { set_country_flag = precursor_select_8 }
+		}
+	}
+	
+	# Coprean Constitution
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_9 }
+			text = precursor.9.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_9 } }
+			text = precursor.9.b
+		}
+		
+		custom_tooltip = precursor.9.c
+		
+		trigger = { has_global_flag = xvcv_precursor_story_pack_active }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_9 }
+				remove_country_flag = precursor_select_9
+			} else = { set_country_flag = precursor_select_9 }
+		}
+	}
+	
+	# Astanine Empire
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_10 }
+			text = precursor.10.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_10 } }
+			text = precursor.10.b
+		}
+		
+		custom_tooltip = precursor.10.c
+		
+		trigger = { has_global_flag = xvcv_precursor_story_pack_active }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_10 }
+				remove_country_flag = precursor_select_10
+			} else = { set_country_flag = precursor_select_10 }
+		}
+	}
+	
+	
+	# Forgotten History - Mod
+	# Plexian Swarm
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_11 }
+			text = precursor.11.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_11 } }
+			text = precursor.11.b
+		}
+		
+		custom_tooltip = precursor.11.c
+		
+		trigger = { has_global_flag = forgotten_history_installed }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_11 }
+				remove_country_flag = precursor_select_11
+			} else = { set_country_flag = precursor_select_11 }
+		}
+	}
+	
+	# Lartia
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_12 }
+			text = precursor.12.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_12 } }
+			text = precursor.12.b
+		}
+		
+		custom_tooltip = precursor.12.c
+		
+		trigger = { has_global_flag = forgotten_history_installed }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_12 }
+				remove_country_flag = precursor_select_12
+			} else = { set_country_flag = precursor_select_12 }
+		}
+	}
+	
+	
+	# More Precursors - Mod
+	# Ixardian Corporation
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_13 }
+			text = precursor.13.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_13 } }
+			text = precursor.13.b
+		}
+		
+		custom_tooltip = precursor.13.c
+		
+		trigger = { has_global_flag = more_precursors_installed }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_13 }
+				remove_country_flag = precursor_select_13
+			} else = { set_country_flag = precursor_select_13 }
+		}
+	}
+	
+	# Werediran Signal
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_14 }
+			text = precursor.14.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_14 } }
+			text = precursor.14.b
+		}
+		
+		custom_tooltip = precursor.14.c
+		
+		trigger = { has_global_flag = more_precursors_installed }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_14 }
+				remove_country_flag = precursor_select_14
+			} else = { set_country_flag = precursor_select_14 }
+		}
+	}
+	
+	# Ezentian Combine
+	option = {
+		name = {
+			trigger = { has_country_flag = precursor_select_15 }
+			text = precursor.15.a
+		}
+		
+		name = {
+			trigger = { not = { has_country_flag = precursor_select_15 } }
+			text = precursor.15.b
+		}
+		
+		custom_tooltip = precursor.15.c
+		
+		trigger = { has_global_flag = more_precursors_installed }
+		
+		hidden_effect = {
+			country_event = { id = precursor_selection.1 }
+			if = { 
+				limit = { has_country_flag = precursor_select_15 }
+				remove_country_flag = precursor_select_15
+			} else = { set_country_flag = precursor_select_15 }
 		}
 	}
 }

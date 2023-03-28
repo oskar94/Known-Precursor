@@ -19,13 +19,22 @@
   precursor.4.b: "§R이라시안 협정국§!"
   precursor.5.a: "§G사이브렉스§!"
   precursor.5.b: "§R사이브렉스§!"
-  
+  precursor_vanilla: "§HCore§!"
+  precursor.1.c: "Source: $precursor_vanilla$"
+  precursor.2.c: "Source: $precursor_vanilla$"
+  precursor.3.c: "Source: $precursor_vanilla$"
+  precursor.4.c: "Source: $precursor_vanilla$"
+  precursor.5.c: "Source: $precursor_vanilla$"
+
   # Ancient Relics DLC
   precursor.6.a: "§G바올 §W(§Y고유§W)§!"
   precursor.6.b: "§R바올 §W(§Y고유§W)§!"
   precursor.7.a: "§G즈로니 §W(§Y고유§W)§!"
   precursor.7.b: "§R즈로니 §W(§Y고유§W)§!"
-  
+  precursor_dlc_ar: "§HAncient Relics§!"
+  precursor.6.c: "Source: DLC $precursor_dlc_ar$"
+  precursor.7.c: "Source: DLC $precursor_dlc_ar$"
+
   # Precursor Story Pack
   precursor.8.a: "§G슬레스 동맹 §W(§Y고유§W)§!"
   precursor.8.b: "§R슬레스 동맹 §W(§Y고유§W)§!"
@@ -33,9 +42,30 @@
   precursor.9.b: "§R코프레아 헌법 §W(§Y고유§W)§!"
   precursor.10.a: "§G아스타닌 제국 §W(§Y고유§W)§!"
   precursor.10.b: "§R아스타닌 제국 §W(§Y고유§W)§!"
-  
+  precursor_mod_psp: "§HPrecursor Story Pack§!"
+  precursor.8.c: "Source: Mod $precursor_mod_psp$"
+  precursor.9.c: "Source: Mod $precursor_mod_psp$"
+  precursor.10.c: "Source: Mod $precursor_mod_psp$"
+
   # Forgotten History
   precursor.11.a: "§G플렉시안 스웜 §W(§Y고유§W)§!"
   precursor.11.b: "§R플렉시안 스웜 §W(§Y고유§W)§!"
   precursor.12.a: "§G라르티아 §W(§Y고유§W)§!"
   precursor.12.b: "§R라르티아 §W(§Y고유§W)§!"
+  precursor_mod_fh: "§HForgotten History!§"
+  precursor.11.c: "Source: Mod $precursor_mod_fh$"
+  precursor.12.c: "Source: Mod $precursor_mod_fh$"
+  
+  # More Precursors 
+  # The Ixardian Corporation, The Werediran Signal and The Ezentian Combine.
+  precursor.13.a: "§GIxardian Corporation §W(§YUnique§W)§!"
+  precursor.13.b: "§RIxardian Corporation §W(§YUnique§W)§!"
+  precursor.14.a: "§GWerediran Signal §W(§YUnique§W)§!"
+  precursor.14.b: "§RWerediran Signal §W(§YUnique§W)§!"
+  precursor.15.a: "§GEzentian Combine §W(§YUnique§W)§!"
+  precursor.15.b: "§REzentian Combine §W(§YUnique§W)§!"
+  precursor_mod_mp: "§HMore Precursors!§"
+  precursor.13.c: "Source: Mod $precursor_mod_mp$"
+  precursor.14.c: "Source: Mod $precursor_mod_mp$"
+  precursor.15.c: "Source: Mod $precursor_mod_mp$"
+

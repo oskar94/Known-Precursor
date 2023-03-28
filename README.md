@@ -15,7 +15,7 @@ Should work fine with some limitations.
 Stellaris 3.7.*
 Not Achivement compatible.
 No vanilla files were harmed.
-Has built in compatibility with [Precursor Story Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=1999328266) and [Forgotten History](https://steamcommunity.com/sharedfiles/filedetails/?id=2916982793)
+Has built in compatibility with [Precursor Story Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=1999328266), [Forgotten History](https://steamcommunity.com/sharedfiles/filedetails/?id=2916982793) and [More Precursors](https://steamcommunity.com/sharedfiles/filedetails/?id=2951652477)
 
 ## Localization
 If you want to help with translation create a fork and edit the respective language file.

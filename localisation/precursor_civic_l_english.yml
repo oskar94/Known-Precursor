@@ -19,12 +19,21 @@
   precursor.4.b: "§RIrassian Concordat§!"
   precursor.5.a: "§GCybrex§!"
   precursor.5.b: "§RCybrex§!"
+  precursor_vanilla: "§HCore§!"
+  precursor.1.c: "Source: $precursor_vanilla$"
+  precursor.2.c: "Source: $precursor_vanilla$"
+  precursor.3.c: "Source: $precursor_vanilla$"
+  precursor.4.c: "Source: $precursor_vanilla$"
+  precursor.5.c: "Source: $precursor_vanilla$"
   
   # Ancient Relics DLC
   precursor.6.a: "§GBaol §W(§YUnique§W)§!"
   precursor.6.b: "§RBaol §W(§YUnique§W)§!"
   precursor.7.a: "§GZroni §W(§YUnique§W)§!"
   precursor.7.b: "§RZroni §W(§YUnique§W)§!"
+  precursor_dlc_ar: "§HAncient Relics§!"
+  precursor.6.c: "Source: DLC $precursor_dlc_ar$"
+  precursor.7.c: "Source: DLC $precursor_dlc_ar$"
   
   # Precursor Story Pack
   precursor.8.a: "§GSless Alliance §W(§YUnique§W)§!"
@@ -33,10 +42,30 @@
   precursor.9.b: "§RCoprean Constitution §W(§YUnique§W)§!"
   precursor.10.a: "§GAstanine Empire §W(§YUnique§W)§!"
   precursor.10.b: "§RAstanine Empire §W(§YUnique§W)§!"
+  precursor_mod_psp: "§HPrecursor Story Pack§!"
+  precursor.8.c: "Source: Mod $precursor_mod_psp$"
+  precursor.9.c: "Source: Mod $precursor_mod_psp$"
+  precursor.10.c: "Source: Mod $precursor_mod_psp$"
   
   # Forgotten History
   precursor.11.a: "§GPlexian Swarm §W(§YUnique§W)§!"
   precursor.11.b: "§RPlexian Swarm §W(§YUnique§W)§!"
   precursor.12.a: "§GLartia §W(§YUnique§W)§!"
   precursor.12.b: "§RLartia §W(§YUnique§W)§!"
+  precursor_mod_fh: "§HForgotten History!§"
+  precursor.11.c: "Source: Mod $precursor_mod_fh$"
+  precursor.12.c: "Source: Mod $precursor_mod_fh$"
   
+  # More Precursors 
+  # The Ixardian Corporation, The Werediran Signal and The Ezentian Combine.
+  precursor.13.a: "§GIxardian Corporation §W(§YUnique§W)§!"
+  precursor.13.b: "§RIxardian Corporation §W(§YUnique§W)§!"
+  precursor.14.a: "§GWerediran Signal §W(§YUnique§W)§!"
+  precursor.14.b: "§RWerediran Signal §W(§YUnique§W)§!"
+  precursor.15.a: "§GEzentian Combine §W(§YUnique§W)§!"
+  precursor.15.b: "§REzentian Combine §W(§YUnique§W)§!"
+  precursor_mod_mp: "§HMore Precursors!§"
+  precursor.13.c: "Source: Mod $precursor_mod_mp$"
+  precursor.14.c: "Source: Mod $precursor_mod_mp$"
+  precursor.15.c: "Source: Mod $precursor_mod_mp$"
+
