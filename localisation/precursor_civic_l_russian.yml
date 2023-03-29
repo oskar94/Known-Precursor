@@ -52,7 +52,7 @@
   precursor.11.b: "§RПлексианский рой§!"
   precursor.12.a: "§GЛартия§!"
   precursor.12.b: "§RЛартия§!"
-  precursor_mod_fh: "§HForgotten History!§"
+  precursor_mod_fh: "§HForgotten History§!"
   precursor.11.c: "Source: Mod $precursor_mod_fh$"
   precursor.12.c: "Source: Mod $precursor_mod_fh$"
   
@@ -64,7 +64,7 @@
   precursor.14.b: "§RWerediran Signal §W(§YUnique§W)§!"
   precursor.15.a: "§GEzentian Combine §W(§YUnique§W)§!"
   precursor.15.b: "§REzentian Combine §W(§YUnique§W)§!"
-  precursor_mod_mp: "§HMore Precursors!§"
+  precursor_mod_mp: "§HMore Precursors§!"
   precursor.13.c: "Source: Mod $precursor_mod_mp$"
   precursor.14.c: "Source: Mod $precursor_mod_mp$"
   precursor.15.c: "Source: Mod $precursor_mod_mp$"

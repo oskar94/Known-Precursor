@@ -70,48 +70,10 @@ country_event = {
 					not = { has_global_flag = baol_started }
 				}
 				
-				set_country_flag = baol_intro
-				set_global_flag = baol_started
-				
-				capital_star = {
-					closest_system = {
-						# max_steps = 10
-						min_steps = 1
-						limit = {
-							NOT = { has_star_flag = sol_system }
-							# NOT = { has_star_flag = empire_home_system }
-							any_system_planet = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								NOR = {
-									is_planet_class = pc_gas_giant
-									is_planet_class = pc_molten
-								}
-							}
-						}
-						
-						set_star_flag = first_grunur_site@root
-						set_star_flag = precursor_baol_1
-						
-						random_system_planet = {
-							limit = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								NOR = {
-									is_planet_class = pc_gas_giant
-									is_planet_class = pc_molten
-								}
-							}
-							create_archaeological_site = grunur_digsite_1
-							prevent_anomaly = yes
-						}
-					}
+				precursor_spawn_digsite = {
+					precursor = baol
+					star_flag = first_grunur_site
+					digsite = grunur_digsite_1
 				}
 			}
 			
@@ -121,53 +83,19 @@ country_event = {
 					not = { has_global_flag = zroni_started }
 				}
 				
-				set_country_flag = zroni_intro
-				set_global_flag = zroni_started
+				precursor_spawn_digsite = {
+					precursor = zroni
+					event_target = zroni_planet_1
+				}
 				
-				capital_star = {
-					closest_system = {
-						max_steps = 10
-						min_steps = 1
-						limit = {
-							any_system_planet = {
-								has_anomaly = no 
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								habitable_planet = yes
-								OR = {
-									is_colony = no
-									AND = {
-										is_colony = yes
-										is_controlled_by = root
-									}    
-								}
-							}
-						}
-						
-						set_star_flag = first_zoroni_site@root
-						random_system_planet = {
-							limit = {
-								has_anomaly = no 
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								habitable_planet = yes
-								OR = {
-									is_colony = no
-									AND = {
-										is_colony = yes
-										is_controlled_by = root
-									}    
-								}
-							}
-							create_archaeological_site = zroni_digsite_1
-							ROOT = {
-								set_country_flag = zroni_arc_chain_@prev
-							}
-							add_deposit = d_zro_deposit_2
-							prevent_anomaly = yes
-						}
+				event_target:zroni_planet_1 = {
+					add_deposit = d_zro_deposit_2
+					ROOT = {
+						set_country_flag = zroni_arc_chain_@prev
 					}
 				}
+				
+				clear_global_event_target = zroni_planet_1
 			}
 			
 			if = { # Precursor Story Pack
@@ -188,50 +116,9 @@ country_event = {
 					not = { has_global_flag = plexi_started }
 				} 
 				
-				set_global_flag = plexi_started
 				precursor_start_chain = { precursor = plexi } 
-				
-				capital_star = {
-					closest_system = {
-						# max_steps = 10
-						min_steps = 1
-						limit = {
-							NOT = { has_star_flag = sol_system }
-							# NOT = { has_star_flag = empire_home_system }
-							any_system_planet = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								NOR = {
-									is_planet_class = pc_gas_giant
-									is_planet_class = pc_molten
-									is_planet_class = pc_toxic
-								}
-							}
-						}
-						
-						set_star_flag = precursor_plexi_1
-						set_star_flag = first_plexi_site@root
-						
-						random_system_planet = {
-							limit = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								NOR = {
-									is_planet_class = pc_gas_giant
-									is_planet_class = pc_molten
-									is_planet_class = pc_toxic
-								}
-							}
-							create_archaeological_site = plexi_digsite_1
-							prevent_anomaly = yes
-						}
-					}
+				precursor_spawn_digsite = {
+					precursor = plexi
 				}
 			}
 			
@@ -241,52 +128,8 @@ country_event = {
 					not = { has_global_flag = lartia_started }
 				} 
 				
-				set_global_flag = lartia_started
-				set_country_flag = lartia_intro
-				
-				capital_star = {
-					closest_system = {
-						# max_steps = 10
-						min_steps = 1
-						limit = {
-							NOT = { has_star_flag = sol_system }
-							# NOT = { has_star_flag = empire_home_system }
-							any_system_planet = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								NOR = {
-									is_planet_class = pc_gas_giant
-									is_planet_class = pc_molten
-									is_planet_class = pc_toxic
-									is_planet_class = pc_shattered
-								}
-							}
-						}
-						
-						set_star_flag = precursor_lartia_1
-						set_star_flag = first_lartia_site@root
-						
-						random_system_planet = {
-							limit = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								NOR = {
-									is_planet_class = pc_gas_giant
-									is_planet_class = pc_molten
-									is_planet_class = pc_toxic
-									is_planet_class = pc_shattered
-								}
-							}
-							create_archaeological_site = lartia_digsite_1
-							prevent_anomaly = yes
-						}
-					}
+				precursor_spawn_digsite = {
+					precursor = lartia
 				}
 			}
 			
@@ -296,42 +139,8 @@ country_event = {
 					not = { has_global_flag = ixardian_started }
 				}
 				
-				set_global_flag = ixardian_started
-				set_country_flag = ixardian_intro
-				
-				capital_star = {
-					closest_system = {
-						# max_steps = 10
-						min_steps = 1
-						limit = {
-							NOT = { has_star_flag = sol_system }
-							# NOT = { has_star_flag = empire_home_system }
-							any_system_planet = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								FHMP_is_valid_precursor_planet = yes
-							}
-						}
-						
-						set_star_flag = precursor_ixardian_1
-						set_star_flag = first_ixardian_site@root
-						
-						random_system_planet = {
-							limit = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								FHMP_is_valid_precursor_planet = yes
-							}
-							create_archaeological_site = ixardian_digsite_1
-							prevent_anomaly = yes
-						}
-					}
+				precursor_spawn_digsite = {
+					precursor = ixardian
 				}
 			}
 			
@@ -341,51 +150,9 @@ country_event = {
 					not = { has_global_flag = werediran_started }
 				}
 				
-				set_global_flag = werediran_started
-				set_country_flag = werediran_intro
-				
-				capital_star = {
-					closest_system = {
-						# max_steps = 10
-						min_steps = 1
-						limit = {
-							NOT = { has_star_flag = sol_system }
-							# NOT = { has_star_flag = empire_home_system }
-							any_system_planet = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								OR = {
-									is_planet_class = pc_alpine
-									is_planet_class = pc_tropical
-									is_planet_class = pc_continental
-								}
-							}
-						}
-						
-						set_star_flag = precursor_werediran_1
-						set_star_flag = first_werediran_site@root
-						
-						random_system_planet = {
-							limit = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								OR = {
-									is_planet_class = pc_alpine
-									is_planet_class = pc_tropical
-									is_planet_class = pc_continental
-								}
-							}
-							create_archaeological_site = werediran_digsite_1
-							save_global_event_target_as = werediran_planet_1
-							prevent_anomaly = yes
-						}
-					}
+				precursor_spawn_digsite = {
+					precursor = werediran
+					event_target = werediran_planet_1
 				}
 			}
 			
@@ -395,53 +162,14 @@ country_event = {
 					not = { has_global_flag = ezentian_started }
 				}
 				
-				set_global_flag = ezentian_started
-				set_country_flag = ezentian_intro
+				precursor_spawn_digsite = {
+					precursor = ezentian
+					event_target = ezentian_planet_1
+				}
 				
-				capital_star = {
-					closest_system = {
-						# max_steps = 10
-						min_steps = 1
-						limit = {
-							NOT = { has_star_flag = sol_system }
-							# NOT = { has_star_flag = empire_home_system }
-							any_system_planet = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								OR = {
-									is_planet_class = pc_barren
-									is_planet_class = pc_barren_cold
-								}
-								NOT = { has_modifier = terraforming_candidate }
-							}
-						}
-						
-						set_star_flag = precursor_ezentian_1
-						set_star_flag = first_ezentian_site@root
-						
-						random_system_planet = {
-							limit = {
-								is_preventing_anomaly = no
-								has_anomaly = no
-								is_star = no
-								NOT = { exists = archaeological_site }
-								NOT = { has_planet_flag = suppress_archaeological_sites }
-								OR = {
-									is_planet_class = pc_barren
-									is_planet_class = pc_barren_cold
-								}
-								NOT = { has_modifier = terraforming_candidate }
-							}
-							create_archaeological_site = ezentian_digsite_1
-							save_global_event_target_as = ezentian_planet_1
-							change_pc = pc_broken
-							set_planet_flag = FHMP_ezentian_planet_1
-							prevent_anomaly = yes
-						}
-					}
+				event_target:ezentian_planet_1 = {
+					change_pc = pc_broken
+					set_planet_flag = FHMP_ezentian_planet_1
 				}
 			}
 			
@@ -550,10 +278,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_1 }
-				remove_country_flag = precursor_select_1
-			} else = { set_country_flag = precursor_select_1 }
+			precursor_toggle_flag = { flag = precursor_select_1 }
 		}
 	}
 	
@@ -573,10 +298,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_2 }
-				remove_country_flag = precursor_select_2
-			} else = { set_country_flag = precursor_select_2 }
+			precursor_toggle_flag = { flag = precursor_select_2 }
 		}
 	}
 	
@@ -596,10 +318,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_3 }
-				remove_country_flag = precursor_select_3
-			} else = { set_country_flag = precursor_select_3 }
+			precursor_toggle_flag = { flag = precursor_select_3 }
 		}
 	}
 	
@@ -619,10 +338,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_4 }
-				remove_country_flag = precursor_select_4
-			} else = { set_country_flag = precursor_select_4 }
+			precursor_toggle_flag = { flag = precursor_select_4 }
 		}
 	}
 	
@@ -642,10 +358,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_5 }
-				remove_country_flag = precursor_select_5
-			} else = { set_country_flag = precursor_select_5 }
+			precursor_toggle_flag = { flag = precursor_select_5 }
 		}
 	}
 	
@@ -669,10 +382,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_6 }
-				remove_country_flag = precursor_select_6
-			} else = { set_country_flag = precursor_select_6 }
+			precursor_toggle_flag = { flag = precursor_select_6 }
 		}
 	}
 	
@@ -694,10 +404,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_7 }
-				remove_country_flag = precursor_select_7
-			} else = { set_country_flag = precursor_select_7 }
+			precursor_toggle_flag = { flag = precursor_select_7 }
 		}
 	}
 	
@@ -721,10 +428,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_8 }
-				remove_country_flag = precursor_select_8
-			} else = { set_country_flag = precursor_select_8 }
+			precursor_toggle_flag = { flag = precursor_select_8 }
 		}
 	}
 	
@@ -746,10 +450,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_9 }
-				remove_country_flag = precursor_select_9
-			} else = { set_country_flag = precursor_select_9 }
+			precursor_toggle_flag = { flag = precursor_select_9 }
 		}
 	}
 	
@@ -771,10 +472,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_10 }
-				remove_country_flag = precursor_select_10
-			} else = { set_country_flag = precursor_select_10 }
+			precursor_toggle_flag = { flag = precursor_select_10 }
 		}
 	}
 	
@@ -798,10 +496,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_11 }
-				remove_country_flag = precursor_select_11
-			} else = { set_country_flag = precursor_select_11 }
+			precursor_toggle_flag = { flag = precursor_select_11 }
 		}
 	}
 	
@@ -823,10 +518,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_12 }
-				remove_country_flag = precursor_select_12
-			} else = { set_country_flag = precursor_select_12 }
+			precursor_toggle_flag = { flag = precursor_select_12 }
 		}
 	}
 	
@@ -850,10 +542,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_13 }
-				remove_country_flag = precursor_select_13
-			} else = { set_country_flag = precursor_select_13 }
+			precursor_toggle_flag = { flag = precursor_select_13 }
 		}
 	}
 	
@@ -875,10 +564,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_14 }
-				remove_country_flag = precursor_select_14
-			} else = { set_country_flag = precursor_select_14 }
+			precursor_toggle_flag = { flag = precursor_select_14 }
 		}
 	}
 	
@@ -900,10 +586,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = { id = precursor_selection.1 }
-			if = { 
-				limit = { has_country_flag = precursor_select_15 }
-				remove_country_flag = precursor_select_15
-			} else = { set_country_flag = precursor_select_15 }
+			precursor_toggle_flag = { flag = precursor_select_15 }
 		}
 	}
 }

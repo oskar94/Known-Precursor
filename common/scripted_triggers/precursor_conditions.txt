@@ -1,0 +1,58 @@
+
+precursor_baol_valid_planet = {
+	NOR = {
+		is_planet_class = pc_gas_giant
+		is_planet_class = pc_molten
+	}
+}
+
+precursor_zroni_valid_planet = {
+	habitable_planet = yes
+	OR = {
+		is_colony = no
+		AND = {
+			is_colony = yes
+			is_controlled_by = root
+		}    
+	}
+}
+
+precursor_plexi_valid_planet = {
+	NOR = {
+		is_planet_class = pc_gas_giant
+		is_planet_class = pc_molten
+		is_planet_class = pc_toxic
+	}
+}
+
+precursor_lartia_valid_planet = {
+	NOR = {
+		is_planet_class = pc_gas_giant
+		is_planet_class = pc_molten
+		is_planet_class = pc_toxic
+		is_planet_class = pc_shattered
+	}
+}
+
+precursor_ixardian_valid_planet = {
+	FHMP_is_valid_precursor_planet = yes
+}
+
+precursor_werediran_valid_planet = {
+	habitable_planet = yes
+	OR = {
+		is_colony = no
+		AND = {
+			is_colony = yes
+			is_controlled_by = root
+		}    
+	}
+}
+
+precursor_ezentian_valid_planet = {
+	OR = {
+		is_planet_class = pc_barren
+		is_planet_class = pc_barren_cold
+	}
+	NOT = { has_modifier = terraforming_candidate }
+}
