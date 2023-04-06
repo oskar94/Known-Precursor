@@ -1,4 +1,4 @@
-﻿l_korean:
+l_korean:
   precursor_selection.1.name: "선구자 선택"
   precursor_selection.1.desc: "이벤트를 시작하고 싶은 선구자를 선택하세요. \n§H\n만약 아무 선구자도 선택하지 않았다면 어떠한 선구자 이벤트도 시작하지 못합니다!§!"
   
@@ -8,7 +8,7 @@
   precursor_cancel: "취소"
   
 
-  # Vanilla precursors
+  # Vanilla precursors 
   precursor.1.a: "§G벌타움 성간 의회§!"
   precursor.1.b: "§R벌타움 성간 의회§!"
   precursor.2.a: "§G유트 제국§!"
@@ -19,23 +19,23 @@
   precursor.4.b: "§R이라시안 협정국§!"
   precursor.5.a: "§G사이브렉스§!"
   precursor.5.b: "§R사이브렉스§!"
-  precursor_vanilla: "§HCore§!"
-  precursor.1.c: "Source: $precursor_vanilla$"
-  precursor.2.c: "Source: $precursor_vanilla$"
-  precursor.3.c: "Source: $precursor_vanilla$"
-  precursor.4.c: "Source: $precursor_vanilla$"
-  precursor.5.c: "Source: $precursor_vanilla$"
+  precursor_vanilla: "§H바닐라§!"
+  precursor.1.c: "출처: $precursor_vanilla$"
+  precursor.2.c: "출처: $precursor_vanilla$"
+  precursor.3.c: "출처: $precursor_vanilla$"
+  precursor.4.c: "출처: $precursor_vanilla$"
+  precursor.5.c: "출처: $precursor_vanilla$"
 
-  # Ancient Relics DLC
+  # Ancient Relics DLC 
   precursor.6.a: "§G바올 §W(§Y고유§W)§!"
   precursor.6.b: "§R바올 §W(§Y고유§W)§!"
   precursor.7.a: "§G즈로니 §W(§Y고유§W)§!"
   precursor.7.b: "§R즈로니 §W(§Y고유§W)§!"
-  precursor_dlc_ar: "§HAncient Relics§!"
-  precursor.6.c: "Source: DLC $precursor_dlc_ar$"
-  precursor.7.c: "Source: DLC $precursor_dlc_ar$"
+  precursor_dlc_ar: "§H고대의 유물§!"
+  precursor.6.c: "출처: DLC $precursor_dlc_ar$"
+  precursor.7.c: "출처: DLC $precursor_dlc_ar$"
 
-  # Precursor Story Pack
+  # Precursor Story Pack (translated in Korean)
   precursor.8.a: "§G슬레스 동맹 §W(§Y고유§W)§!"
   precursor.8.b: "§R슬레스 동맹 §W(§Y고유§W)§!"
   precursor.9.a: "§G코프레아 헌법 §W(§Y고유§W)§!"
@@ -43,29 +43,29 @@
   precursor.10.a: "§G아스타닌 제국 §W(§Y고유§W)§!"
   precursor.10.b: "§R아스타닌 제국 §W(§Y고유§W)§!"
   precursor_mod_psp: "§HPrecursor Story Pack§!"
-  precursor.8.c: "Source: Mod $precursor_mod_psp$"
-  precursor.9.c: "Source: Mod $precursor_mod_psp$"
-  precursor.10.c: "Source: Mod $precursor_mod_psp$"
+  precursor.8.c: "출처: Mod $precursor_mod_psp$"
+  precursor.9.c: "출처: Mod $precursor_mod_psp$"
+  precursor.10.c: "출처: Mod $precursor_mod_psp$"
 
-  # Forgotten History
-  precursor.11.a: "§G플렉시안 스웜 §W(§Y고유§W)§!"
-  precursor.11.b: "§R플렉시안 스웜 §W(§Y고유§W)§!"
-  precursor.12.a: "§G라르티아 §W(§Y고유§W)§!"
-  precursor.12.b: "§R라르티아 §W(§Y고유§W)§!"
+  # Forgotten History (not translated in Korean)
+  precursor.11.a: "§GPlexian Swarm §W(§Y고유§W)§!"
+  precursor.11.b: "§RPlexian Swarm §W(§Y고유§W)§!"
+  precursor.12.a: "§GLartia §W(§Y고유§W)§!"
+  precursor.12.b: "§RLartia §W(§Y고유§W)§!"
   precursor_mod_fh: "§HForgotten History§!"
-  precursor.11.c: "Source: Mod $precursor_mod_fh$"
-  precursor.12.c: "Source: Mod $precursor_mod_fh$"
+  precursor.11.c: "출처: Mod $precursor_mod_fh$"
+  precursor.12.c: "출처: Mod $precursor_mod_fh$"
   
-  # More Precursors 
+  # More Precursors (not translated in Korean)
   # The Ixardian Corporation, The Werediran Signal and The Ezentian Combine.
-  precursor.13.a: "§GIxardian Corporation §W(§YUnique§W)§!"
-  precursor.13.b: "§RIxardian Corporation §W(§YUnique§W)§!"
-  precursor.14.a: "§GWerediran Signal §W(§YUnique§W)§!"
-  precursor.14.b: "§RWerediran Signal §W(§YUnique§W)§!"
-  precursor.15.a: "§GEzentian Combine §W(§YUnique§W)§!"
-  precursor.15.b: "§REzentian Combine §W(§YUnique§W)§!"
+  precursor.13.a: "§GIxardian Corporation §W(§Y고유§W)§!"
+  precursor.13.b: "§RIxardian Corporation §W(§Y고유§W)§!"
+  precursor.14.a: "§GWerediran Signal §W(§Y고유§W)§!"
+  precursor.14.b: "§RWerediran Signal §W(§Y고유§W)§!"
+  precursor.15.a: "§GEzentian Combine §W(§Y고유§W)§!"
+  precursor.15.b: "§REzentian Combine §W(§Y고유§W)§!"
   precursor_mod_mp: "§HMore Precursors§!"
-  precursor.13.c: "Source: Mod $precursor_mod_mp$"
-  precursor.14.c: "Source: Mod $precursor_mod_mp$"
-  precursor.15.c: "Source: Mod $precursor_mod_mp$"
+  precursor.13.c: "출처: Mod $precursor_mod_mp$"
+  precursor.14.c: "출처: Mod $precursor_mod_mp$"
+  precursor.15.c: "출처: Mod $precursor_mod_mp$"
 
