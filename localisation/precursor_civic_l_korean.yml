@@ -1,4 +1,4 @@
-l_korean:
+﻿l_korean:
   precursor_selection.1.name: "선구자 선택"
   precursor_selection.1.desc: "이벤트를 시작하고 싶은 선구자를 선택하세요. \n§H\n만약 아무 선구자도 선택하지 않았다면 어떠한 선구자 이벤트도 시작하지 못합니다!§!"
   
