@@ -30,6 +30,18 @@ country_event = {
 	is_triggered_only = yes 
 	picture = GFX_evt_ancient_databank
 	
+	immediate = {
+		if = { # Precursor Story Pack
+			limit = { 
+				has_global_flag = xvcv_precursor_story_pack_active 
+			}
+			
+			if = { limit = { has_country_flag = pspmod_precursor_set_sless } set_country_flag = precursor_select_8 }
+			if = { limit = { has_country_flag = pspmod_precursor_set_coprean } set_country_flag = precursor_select_9 }
+			if = { limit = { has_country_flag = pspmod_precursor_set_astanine } set_country_flag = precursor_select_10 }
+		}
+	}
+	
 	# Cancel selection 
 	option = {
 		name = precursor_cancel
@@ -105,6 +117,7 @@ country_event = {
 				remove_country_flag = pspmod_precursor_set_sless
 				remove_country_flag = pspmod_precursor_set_coprean
 				remove_country_flag = pspmod_precursor_set_astanine
+					
 				if = { limit = { has_country_flag = precursor_select_8 } set_country_flag = pspmod_precursor_set_sless }
 				if = { limit = { has_country_flag = precursor_select_9 } set_country_flag = pspmod_precursor_set_coprean }
 				if = { limit = { has_country_flag = precursor_select_10 } set_country_flag = pspmod_precursor_set_astanine }
