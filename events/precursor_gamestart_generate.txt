@@ -22,14 +22,11 @@ event = {
 	}
 }
 
-# Menu
 country_event = {
-	id = precursor_selection.1
-	title = precursor_selection.1.name
-	desc = precursor_selection.1.desc
-	is_triggered_only = yes 
-	picture = GFX_evt_ancient_databank
-	
+	id = precursor_selection.0
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
 	immediate = {
 		if = { # Precursor Story Pack
 			limit = { 
@@ -40,6 +37,19 @@ country_event = {
 			if = { limit = { has_country_flag = pspmod_precursor_set_coprean } set_country_flag = precursor_select_9 }
 			if = { limit = { has_country_flag = pspmod_precursor_set_astanine } set_country_flag = precursor_select_10 }
 		}
+	}
+}
+
+# Menu
+country_event = {
+	id = precursor_selection.1
+	title = precursor_selection.1.name
+	desc = precursor_selection.1.desc
+	is_triggered_only = yes 
+	picture = GFX_evt_ancient_databank
+	
+	immediate = {
+		country_event = { id = precursor_selection.0 }
 	}
 	
 	# Cancel selection 
